@@ -1,20 +1,18 @@
 document.getElementById('prediction-form').addEventListener('submit', function(event) {
     event.preventDefault(); // This prevents the default form submission behavior (page reload)
-
-    const jobDescription = document.getElementById('job-description').value;
+    
+    const form = event.target;
+    const formData = new FormData(form);
     const resultDiv = document.getElementById('result');
-
+    
     // Show a loading message to the user
     resultDiv.textContent = 'Predicting...';
     resultDiv.className = ''; // Clear previous styling
-
-    // Send the data to our Flask backend using the fetch API
+    
+    // Send the form data to the Flask backend using the fetch API
     fetch('/predict', {
         method: 'POST',
-        headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-        },
-        body: `job_description=${encodeURIComponent(jobDescription)}` // Encode the text for URL transmission
+        body: formData // Send the entire form data object
     })
     .then(response => response.json()) // Parse the JSON response from the backend
     .then(data => {

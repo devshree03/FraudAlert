@@ -1,6 +1,6 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e8f5e9; /* Light green background */
     color: #333;
     display: flex;
     justify-content: center;
@@ -10,18 +10,19 @@ body {
 }
 
 .container {
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 40px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 600px;
+    max-width: 900px;
     text-align: center;
 }
 
-h1 {
-    color: #333;
-    margin-bottom: 10px;
+h2 {
+    color: #5bb0cd; /* Dark green heading */
+    font-weight: 600;
+    margin-bottom: 5px;
 }
 
 p {
@@ -29,41 +30,69 @@ p {
     margin-bottom: 25px;
 }
 
-textarea {
-    width: 95%;
-    padding: 10px;
-    margin-bottom: 20px;
+.job-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 12px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    resize: vertical;
     font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    border-color: #5bb0cd; /* Green focus highlight */
 }
 
 button {
-    background-color: #007bff;
+    background-color: #5bb0cd; /* Green submit button */
     color: white;
-    padding: 12px 20px;
+    padding: 15px 30px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 18px;
-    transition: background-color 0.3s;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 10px;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #5bb0cd; /* Darker green on hover */
+    transform: translateY(-2px);
 }
 
 #result {
-    margin-top: 25px;
-    font-size: 24px;
+    margin-top: 30px;
+    font-size: 28px;
     font-weight: bold;
 }
 
 .real {
-    color: #28a745; /* Green for real jobs */
+    color: #28a745;
 }
 
 .fake {
-    color: #dc3545; /* Red for fake jobs */
+    color: #dc3545;
 }
+
+@media (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+

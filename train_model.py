@@ -1,65 +1,120 @@
 import pandas as pd
 import re
 import pickle
+import nltk
+import numpy as np
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.linear_model import PassiveAggressiveClassifier
+from sklearn.linear_model import LogisticRegression
+from scipy import sparse
+from tqdm import tqdm
+from sklearn.metrics import classification_report
 
-# 1. Load the dataset
+# One-time NLTK download
+nltk.download('stopwords')
+
+# ---------- Text preprocessing ----------
+ps = PorterStemmer()
+STOPWORDS = set(stopwords.words('english'))
+
+def text_processing(text):
+    if not isinstance(text, str):
+        return ""
+    review = re.sub(r'[^a-zA-Z]', ' ', text)
+    review = review.lower().split()
+    review = [ps.stem(w) for w in review if w not in STOPWORDS]
+    return ' '.join(review)
+
+def keyword_counter(text):
+    fake_keywords = [
+        'hiring', 'freelance', 'home', 'work from home', 'online',
+        'easy money', 'no experience', 'fast cash', 'income', 'earning',
+        'whatsapp', 'registration fee', 'telegram', 'dm', 'immediate joiner'
+    ]
+    t = (text or "").lower()
+    return sum(t.count(k) for k in fake_keywords)
+
+def yn(v):
+    return 1 if str(v).strip().lower() in {"y", "yes", "true", "1"} else 0
+
 print("Loading dataset...")
 df = pd.read_csv('DataSet.csv')
 
-# 2. Data Cleaning and Preprocessing
-print("Preprocessing data...")
-# Combine relevant text columns into a single feature
-df['text'] = df['title'] + ' ' + df['location'] + ' ' + df['company_profile'] + ' ' + df['description'] + ' ' + df['requirements'] + df['industry'] + ' ' + df['function']
+# Build text fields
+tqdm.pandas()
+df['text'] = (
+    df['title'].fillna('') + ' ' + df['location'].fillna('') + ' ' +
+    df['company_profile'].fillna('') + ' ' + df['description'].fillna('') + ' ' +
+    df['requirements'].fillna('') + ' ' + df['benefits'].fillna('') + ' ' +
+    df['industry'].fillna('') + ' ' + df['function'].fillna('')
+)
+df['processed_text'] = df['text'].progress_apply(text_processing)
 
-# Handle missing values by replacing them with empty strings
-df.fillna('', inplace=True)
+# Numerical features
+num_cols = ['telecommuting', 'has_company_logo', 'has_questions']
+df_num = df[num_cols].copy()
 
-# Text Pre-processing function
-ps = PorterStemmer()
-def text_processing(text):
-    if not isinstance(text, str):
-        text = ""
-    # Remove non-alphabetic characters and convert to lowercase
-    review = re.sub('[^a-zA-Z]', ' ', text)
-    review = review.lower().split()
-    # Remove stopwords and apply stemming
-    review = [ps.stem(word) for word in review if not word in stopwords.words('english')]
-    review = ' '.join(review)
-    return review
+for col in num_cols:
+    df_num[col] = df_num[col].apply(yn)
 
-# Apply the processing function to our combined text column
-df['processed_text'] = df['text'].apply(text_processing)
+df_num['profile_length'] = df['company_profile'].fillna('').apply(lambda s: min(len(s), 3000))
+df_num['keyword_count'] = df['text'].apply(keyword_counter)
 
-# 3. Split the data into training and testing sets
-print("Splitting data...")
-X = df['processed_text']
-y = df['fraudulent']
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+# Target
+#y = df['fraudulent'].astype(int)
+# Target
+raw_y = df['fraudulent']
 
-# 4. Vectorize the text data
-# Vectorization turns our text into numbers that the model can understand
-print("Vectorizing text data...")
-tfidf_v = TfidfVectorizer(max_features=5000, stop_words='english')
-X_train_vectorized = tfidf_v.fit_transform(X_train)
-X_test_vectorized = tfidf_v.transform(X_test)
+# Normalize various truthy/falsey encodings to {0,1}
+true_set = {"1","true","t","yes","y","fake","fraud","fraudulent"}
+false_set = {"0","false","f","no","n","real","legit","legitimate"}
 
-# 5. Train the machine learning model
-print("Training the model...")
-model = PassiveAggressiveClassifier(max_iter=50, random_state=42, C=0.5)
-model.fit(X_train_vectorized, y_train)
+def to01(v):
+    s = str(v).strip().lower()
+    if s in true_set:
+        return 1
+    if s in false_set:
+        return 0
+    # Fallback: try numeric cast else treat nonzero-ish as 1
+    try:
+        return 1 if float(s) != 0.0 else 0
+    except:
+        return 0
 
-# 6. Save the trained model and vectorizer
-# We save these so we don't have to re-train the model every time we run the app
-print("Saving the model and vectorizer...")
-with open('model.pkl', 'wb') as model_file:
-    pickle.dump(model, model_file)
+y = raw_y.apply(to01).astype(int)
 
-with open('tfidf_v.pkl', 'wb') as vectorizer_file:
-    pickle.dump(tfidf_v, vectorizer_file)
 
-print("Model and vectorizer saved successfully. You can now run 'python train_model.py'")
+# TF-IDF
+print("Vectorizing text...")
+tfidf_v = TfidfVectorizer(max_features=5000, stop_words='english', ngram_range=(1,2), sublinear_tf=True)
+X_text = tfidf_v.fit_transform(df['processed_text'])
+
+# Combine with numeric (as sparse csr)
+num_mat = sparse.csr_matrix(df_num.astype(np.float32).values)
+X = sparse.hstack([X_text, num_mat], format='csr')
+
+# Split with stratify
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.2, random_state=42, stratify=y
+)
+
+# Train a balanced linear model (works well on sparse text)
+print("Training model...")
+clf = LogisticRegression(class_weight="balanced", max_iter=1000, solver="liblinear")
+clf.fit(X_train, y_train)
+
+# Evaluate
+print("Evaluating...")
+y_pred = clf.predict(X_test)
+print(classification_report(y_test, y_pred, digits=3))
+
+# Save artifacts
+print("Saving artifacts...")
+with open('model.pkl', 'wb') as f:
+    pickle.dump(clf, f)
+with open('tfidf_v.pkl', 'wb') as f:
+    pickle.dump(tfidf_v, f)
+
+print("Done. Run `flask run` or `python app.py` to serve the app.")
