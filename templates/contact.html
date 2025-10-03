@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact - FraudAlert</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="light">
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <span class="logo-mark">
+         <img src="{{ url_for('static', filename='logo.png') }}" alt="FraudAlert logo" />
+        </span>
+        <span class="brand-text">FraudAlert</span>
+      </div>
+
+      <ul class="menu">
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('how') }}">How It Works</a></li>
+        <li class="active"><a href="{{ url_for('contact') }}">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="result-page">
+    <div class="result-card">
+      <div class="result-title">Contact</div>
+      <p><strong>Name:</strong> [Devyani Anil Patil]</p>
+      <p><strong>Email:</strong> [devshree@gmail.com]</p>
+      <p><strong>Phone:</strong> [+91-7219854481]</p>
+    </div>
+  </section>
+
+    <div class="result-sub" style="margin-top:12px">Send Feedback</div>
+    <form action="{{ url_for('feedback') }}" method="post" class="stack" style="width:100%; max-width:600px">
+      <div class="grid">
+        <input type="text" name="name" placeholder="Your name" required />
+        <input type="email" name="email" placeholder="Email" required />
+      </div>
+      <input type="text" name="phone" placeholder="Phone (optional)" />
+      <textarea name="message" rows="5" placeholder="Message..." required></textarea>
+      <button type="submit" class="btn btn-dark hoverable">Send</button>
+    </form>
+  </div>
+</section>
+
+</body>
+</html>

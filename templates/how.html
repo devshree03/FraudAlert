@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>How It Works - FraudAlert</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="light">
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+       <span class="logo-mark">
+         <img src="{{ url_for('static', filename='logo.png') }}" alt="FraudAlert logo" />
+       </span>
+       <span class="brand-text">FraudAlert</span>
+     </div>
+      <ul class="menu">
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li class="active"><a href="{{ url_for('how') }}">How It Works</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="result-page">
+    <div class="result-card">
+      <div class="result-title">How It Works</div>
+      <ol>
+        <li>Ingest the JD via paste, PDF/DOCX, or form.</li>
+        <li>Preprocess text (clean, tokenize, stem) and create TF‑IDF features.</li>
+        <li>Append engineered numeric features (e.g., risky phrases count).</li>
+        <li>Predict with a balanced Logistic Regression and compute probability.</li>
+        <li>Show label, risk percentage, and top indicative tokens.</li>
+      </ol>
+    </div>
+  </section>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FraudAlert - Predict Job Fraud</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+</head>
+<body class="light">
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <span class="logo-mark">
+          <img src="{{ url_for('static', filename='logo.png') }}" alt="FraudAlert logo" />
+        </span>
+        <span class="brand-text">FraudAlert</span>
+      </div>
+      <ul class="menu">
+        <li class="active"><a href="{{ url_for('home') }}">Home</a></li>
+        <li><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('how') }}">How It Works</a></li>
+  <li><a href="{{ url_for('contact') }}">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero hero-art">
+    <div class="hero-inner">
+      <h1>PREDICT JOB FRAUD.<br/>SECURE YOUR FUTURE</h1>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card card-blue">
+      <div class="card-head"><div class="card-icon">📝</div><h3>Quick Text Analysis</h3></div>
+      <form class="stack" action="{{ url_for('analyze_text_page') }}" method="post">
+        <textarea name="text" rows="8" placeholder="Paste Job Description Text Here..." required></textarea>
+        <button type="submit" class="btn btn-orange">ANALYZE TEXT</button>
+      </form>
+    </section>
+
+    <section class="card card-green">
+      <div class="card-head"><div class="card-icon">📄</div><h3>Upload PDF</h3></div>
+      <form class="stack" action="{{ url_for('analyze_file_page') }}" method="post" enctype="multipart/form-data">
+        <div class="drop">
+          <input type="file" name="file" accept=".pdf,.docx" required />
+          <p>Drag &amp; Drop PDF Here or<br/>Click to Browse</p>
+        </div>
+        <button type="submit" class="btn btn-dark">BROWSE FILES</button>
+      </form>
+    </section>
+
+    <section class="card card-navy">
+      <div class="card-head"><div class="card-icon gear">⚙️</div><h3>More Control? Use Our Detailed Form</h3></div>
+      <form class="grid" action="{{ url_for('predict_page') }}" method="post">
+        <input type="text" name="title" placeholder="Title *" required />
+        <input type="text" name="department" placeholder="Department" />
+        <input type="text" name="location" placeholder="Location *" required />
+        <input type="text" name="salary_range" placeholder="Salary Range" />
+        <input type="text" name="company_profile" placeholder="Company Profile *" required />
+        <input type="text" name="requirements" placeholder="Requirements *" required />
+        <input type="text" name="description" placeholder="Description *" required />
+        <input type="text" name="benefits" placeholder="Benefits *" required />
+        <input type="text" name="has_company_logo" placeholder="Has Company Logo (Yes/No)" />
+        <input type="text" name="telecommuting" placeholder="Telecommuting (Yes/No)" />
+        <input type="text" name="has_questions" placeholder="Has Questions (Yes/No)" />
+        <input type="text" name="required_education" placeholder="Required Education" />
+        <input type="text" name="industry" placeholder="Industry *" required />
+        <input type="text" name="function" placeholder="Function" />
+        <div class="grid-full"><button type="submit" class="btn btn-orange full">PREDICT FRAUD</button></div>
+      </form>
+    </section>
+  </main>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="logo-mark">
+        <img src="{{ url_for('static', filename='logo.png') }}" alt="FraudAlert logo" />
+      </span>
+      <span class="brand-text">FraudAlert</span>
+    </div>
+    <div class="footer-contact">
+      <div><strong>Email:</strong> <a href="mailto:you@example.com">devshree485@gmail.com</a></div>
+      <div><strong>Phone:</strong> <a href="tel:+91XXXXXXXXXX">+91-7219854481</a></div>
+      <div><strong>Location:</strong> Pune, India</div>
+    </div>
+    <div class="footer-links">
+      <a href="{{ url_for('about') }}">About</a>
+      <a href="{{ url_for('how') }}">How It Works</a>
+      <a href="{{ url_for('contact') }}">Contact</a>
+    </div>
+  </div>
+  <div class="footer-bar">
+    <span>© {{ 2025 }} FraudAlert • v1.0.0</span>
+  </div>
+</footer>
+
+</body>
+</html>

@@ -29,7 +29,9 @@ def text_processing(text):
 
 def keyword_counter(text):
     fake_keywords = [
-        'hiring', 'freelance', 'home', 'work from home', 'online',
+        'registration fee', 'whatsapp', 'telegram', 'dm ', 'direct message', 
+    'no interview', 'join immediately', 'earn per day', 'daily payout', 
+    'pay now', 'activation fee', 'refundable fee', 'work from whatsapp','hiring', 'freelance', 'home', 'work from home', 'online',
         'easy money', 'no experience', 'fast cash', 'income', 'earning',
         'whatsapp', 'registration fee', 'telegram', 'dm', 'immediate joiner'
     ]

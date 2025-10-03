@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About - FraudAlert</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="light">
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+       <span class="logo-mark">
+         <img src="{{ url_for('static', filename='logo.png') }}" alt="FraudAlert logo" />
+       </span>
+       <span class="brand-text">FraudAlert</span>
+    
+    </div>
+      <ul class="menu">
+        <li><a href="{{ url_for('home') }}">Home</a></li>
+        <li class="active"><a href="{{ url_for('about') }}">About</a></li>
+        <li><a href="{{ url_for('how') }}">How It Works</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <section class="result-page">
+  <div class="result-card">
+    <div class="result-title">About</div>
+    <p>FraudAlert flags risky job postings using transparent ML signals. It supports paste text, PDF/DOCX uploads, and a detailed form, returning a label, risk percentage, and top signals.</p>
+
+    <div class="result-sub" style="margin-top:12px">FAQ</div>
+    <div class="faq">
+      <details>
+        <summary>What counts as a “signal”?</summary>
+        <p>Signals are high‑weight words/phrases in the text (e.g., “registration fee”, “WhatsApp”, “no interview”) that pushed the prediction toward FAKE. They are shown to explain the decision.</p>
+      </details>
+      <details>
+        <summary>Do you store my PDFs or text?</summary>
+        <p>No. Files are processed in a temporary directory and deleted after analysis. Text is handled in memory. You can add opt‑in logging later for diagnostics.</p>
+      </details>
+      <details>
+        <summary>Why did a normal JD show FAKE?</summary>
+        <p>Extraction noise or scam‑like phrasing can spike risk. Check the Signals list, remove unrelated boilerplate, or paste clean text. Thresholds can be tuned to reduce false positives.</p>
+      </details>
+      <details>
+        <summary>Does it work on screenshots?</summary>
+        <p>Only if OCR is enabled (not by default). Text‑based PDFs/DOCX work best.</p>
+      </details>
+      <details>
+        <summary>Is the score a guarantee?</summary>
+        <p>No. It’s a probabilistic risk indicator. Always verify company domain, never pay fees, and avoid off‑platform chats.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
