@@ -11,10 +11,10 @@
     <div class="nav-inner">
       <div class="brand">
         <span class="logo-mark">
-         <img src="{{ url_for('static', filename='logo.png') }}" alt="FraudAlert logo" />
-       </span>
-       <span class="brand-text">FraudAlert</span>
-     </div>
+          <img src="{{ url_for('static', filename='logo.svg') }}" alt="FraudAlert logo" />
+        </span>
+        <span class="brand-text">FraudAlert</span>
+      </div>
       <ul class="menu">
         <li><a href="{{ url_for('home') }}">Home</a></li>
         <li><a href="{{ url_for('about') }}">About</a></li>
@@ -26,16 +26,26 @@
 
   <section class="result-page">
     <div class="result-card">
+      <p class="help" role="note">This shows the estimated chance this job post is REAL. Always verify before acting.</p>
+
       <div class="gauge-wrap">
-        <svg class="ring" viewBox="0 0 160 160">
+        <svg class="ring" viewBox="0 0 160 160" role="img" aria-label="Risk gauge">
           <circle class="ring-track" cx="80" cy="80" r="64"></circle>
-          <circle class="ring-bar {% if prediction=='FAKE' %}fake{% else %}real{% endif %}" cx="80" cy="80" r="64"
-                  stroke-dasharray="402" stroke-dashoffset="{{ 402 - (402*(percent or 0)/100) }}"></circle>
+          <circle
+            class="ring-bar {% if prediction=='FAKE' %}fake{% else %}real{% endif %}"
+            cx="80" cy="80" r="64"
+            stroke-dasharray="402"
+            stroke-dashoffset="{{ 402 - (402*(percent or 0)/100) }}">
+          </circle>
           <text x="80" y="82" text-anchor="middle" class="ring-text">
             {% if percent is not none %}{{ percent|round(0) }}%{% else %}--{% endif %}
           </text>
         </svg>
-        <div class="result-pill {{ 'fake' if prediction=='FAKE' else 'real' }}">{{ prediction }}</div>
+        <div class="sr-only" aria-live="polite">
+         Estimated {{ percent|round(0) if percent is not none else '--' }}% REAL — {{ prediction }}.
+        </div>
+
+        <div class="result-pill {{ 'fake' if prediction=='FAKE' else 'real' }}" aria-label="Prediction">{{ prediction }}</div>
       </div>
 
       {% if reasons and reasons|length %}
@@ -45,13 +55,23 @@
 
       {% if extracted %}
       <div class="result-sub">Extracted fields</div>
-      <pre class="extracted">{{ extracted|tojson(indent=2) }}</pre>
+      <pre class="extracted" aria-label="Extracted fields JSON">{{ extracted|tojson(indent=2) }}</pre>
       {% endif %}
-      <div class="button-row">
-       <a class="btn btn-dark hoverable" href="{{ url_for('home') }}">Check another</a>
-      </div>
-      </div>
 
+      <div class="button-row">
+        <a class="btn btn-dark hoverable" href="{{ url_for('home') }}" aria-label="Check another job">Check another</a>
+      </div>
+    </div>
   </section>
+
+  <script>
+    // Basic enhancement if forms exist on this page in the future
+    for (const form of document.querySelectorAll('form')) {
+      form.addEventListener('submit', e => {
+        const btn = form.querySelector('button[type="submit"]');
+        if (btn) { btn.dataset.old = btn.textContent; btn.textContent = 'Processing...'; btn.disabled = true; }
+      });
+    }
+  </script>
 </body>
 </html>

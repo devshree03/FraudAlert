@@ -10,7 +10,7 @@
     <div class="nav-inner">
       <div class="brand">
        <span class="logo-mark">
-         <img src="{{ url_for('static', filename='logo.png') }}" alt="FraudAlert logo" />
+         <img src="{{ url_for('static', filename='logo.svg') }}" alt="FraudAlert logo" />
        </span>
        <span class="brand-text">FraudAlert</span>
      </div>
@@ -22,6 +22,10 @@
       </ul>
     </div>
   </nav>
+  {% include "_hero.html" with context %}
+
+
+
   <section class="result-page">
     <div class="result-card">
       <div class="result-title">How It Works</div>
@@ -34,5 +38,28 @@
       </ol>
     </div>
   </section>
+  <footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="logo-mark">
+         <img src="{{ url_for('static', filename='logo.svg') }}" alt="FraudAlert logo" />
+       </span>
+      <span class="brand-text">FraudAlert</span>
+    </div>
+    <div class="footer-contact">
+      <div><strong>Email:</strong> <a href="mailto:you@example.com">devshree485@gmail.com</a></div>
+      <div><strong>Phone:</strong> <a href="tel:+91XXXXXXXXXX">+91-7219854481</a></div>
+      <div><strong>Location:</strong> Pune, India</div>
+    </div>
+    <div class="footer-links">
+      <a href="{{ url_for('about') }}">About</a>
+      <a href="{{ url_for('how') }}">How It Works</a>
+      <a href="{{ url_for('contact') }}">Contact</a>
+    </div>
+  </div>
+  <div class="footer-bar">
+    <span>© {{ 2025 }} FraudAlert • v1.0.0</span>
+  </div>
+</footer>
 </body>
 </html>

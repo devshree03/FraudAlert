@@ -4,14 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>FraudAlert - Predict Job Fraud</title>
-  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v=3">
 </head>
 <body class="light">
   <nav class="nav">
     <div class="nav-inner">
       <div class="brand">
         <span class="logo-mark">
-          <img src="{{ url_for('static', filename='logo.png') }}" alt="FraudAlert logo" />
+          <img src="{{ url_for('static', filename='logo.svg') }}" alt="FraudAlert logo" />
         </span>
         <span class="brand-text">FraudAlert</span>
       </div>
@@ -19,81 +19,135 @@
         <li class="active"><a href="{{ url_for('home') }}">Home</a></li>
         <li><a href="{{ url_for('about') }}">About</a></li>
         <li><a href="{{ url_for('how') }}">How It Works</a></li>
-  <li><a href="{{ url_for('contact') }}">Contact</a></li>
+        <li><a href="{{ url_for('contact') }}">Contact</a></li>
       </ul>
     </div>
   </nav>
-
-  <header class="hero hero-art">
-    <div class="hero-inner">
-      <h1>PREDICT JOB FRAUD.<br/>SECURE YOUR FUTURE</h1>
-    </div>
-  </header>
+  {% include "_hero.html" with context %}
 
   <main class="wrap">
-    <section class="card card-blue">
-      <div class="card-head"><div class="card-icon">📝</div><h3>Quick Text Analysis</h3></div>
-      <form class="stack" action="{{ url_for('analyze_text_page') }}" method="post">
-        <textarea name="text" rows="8" placeholder="Paste Job Description Text Here..." required></textarea>
-        <button type="submit" class="btn btn-orange">ANALYZE TEXT</button>
-      </form>
+    <!-- Quick Text -->
+    <section class="card quick-card">
+      <div class="q-inner">
+        <div class="q-icon">🗒️</div>
+        <h3 class="q-title">Quick Text Analysis</h3>
+        <form class="q-form" action="{{ url_for('analyze_text_page') }}" method="post" aria-label="Analyze text form">
+          <div class="q-textarea-wrap">
+            <textarea name="text" rows="8" placeholder="Paste Job Description Text Here..." aria-label="Job description text" required></textarea>
+          </div>
+          <button type="submit" class="q-cta" aria-label="Analyze pasted job text">ANALYZE TEXT</button>
+        </form>
+        <!-- Try samples toggle -->
+<button type="button" class="samples-toggle" aria-expanded="false" aria-controls="samples_panel">
+  Try samples
+</button>
+
+<div id="samples_panel" class="samples-panel is-hidden">
+  <form action="{{ url_for('analyze_text_page') }}" method="post" class="sample-form">
+    <input type="hidden" name="text" value="We are a fast-growing global solutions provider helping individuals earn from anywhere. One-time refundable registration fee ₹999 for activation. Daily payout available. No interview required. Join our WhatsApp group +91-98XXXXXX12 or Telegram @DataFastSupport to start immediately." />
+    <button type="submit" class="sample-link">Try a fake sample</button>
+  </form>
+  <form action="{{ url_for('analyze_text_page') }}" method="post" class="sample-form">
+    <input type="hidden" name="text" value="About the role: Build and maintain data pipelines supporting analytics stakeholders. Responsibilities: collaborate with engineering, ensure CI/CD and testing. Qualifications: Bachelor's in CS or related, Python/SQL experience. Benefits: health insurance, paid leave, hybrid work. Contact: careers@company.com https://careers.company.com/jobs/12345" />
+    <button type="submit" class="sample-link">Try a real sample</button>
+  </form>
+</div>
+
+
+  
+      </div>
     </section>
 
-    <section class="card card-green">
-      <div class="card-head"><div class="card-icon">📄</div><h3>Upload PDF</h3></div>
-      <form class="stack" action="{{ url_for('analyze_file_page') }}" method="post" enctype="multipart/form-data">
-        <div class="drop">
-          <input type="file" name="file" accept=".pdf,.docx" required />
-          <p>Drag &amp; Drop PDF Here or<br/>Click to Browse</p>
+    <!-- Upload PDF -->
+    <section class="card upload-card">
+      <div class="upload-inner">
+        <div class="upload-top">
+          <div class="upload-icon small">📄⬆️</div>
+          <h3 class="upload-title">Upload PDF</h3>
         </div>
-        <button type="submit" class="btn btn-dark">BROWSE FILES</button>
-      </form>
+
+        <form class="upload-form" action="{{ url_for('analyze_file_page') }}" method="post" enctype="multipart/form-data">
+          <div class="upload-drop" id="drop_zone">
+            <div class="upload-illustration">📄⬆️</div>
+            <p class="upload-hint">Choose a PDF or DOCX to analyze</p>
+            <input type="file" name="file" id="jd_file" accept=".pdf,.docx" required />
+            <p id="file_name" class="file-name"></p>
+          </div>
+          <button type="submit" class="upload-cta">ANALYZE FILES</button>
+        </form>
+      </div>
     </section>
 
+    <!-- Detailed form -->
     <section class="card card-navy">
-      <div class="card-head"><div class="card-icon gear">⚙️</div><h3>More Control? Use Our Detailed Form</h3></div>
-      <form class="grid" action="{{ url_for('predict_page') }}" method="post">
-        <input type="text" name="title" placeholder="Title *" required />
-        <input type="text" name="department" placeholder="Department" />
-        <input type="text" name="location" placeholder="Location *" required />
-        <input type="text" name="salary_range" placeholder="Salary Range" />
-        <input type="text" name="company_profile" placeholder="Company Profile *" required />
-        <input type="text" name="requirements" placeholder="Requirements *" required />
-        <input type="text" name="description" placeholder="Description *" required />
-        <input type="text" name="benefits" placeholder="Benefits *" required />
-        <input type="text" name="has_company_logo" placeholder="Has Company Logo (Yes/No)" />
-        <input type="text" name="telecommuting" placeholder="Telecommuting (Yes/No)" />
-        <input type="text" name="has_questions" placeholder="Has Questions (Yes/No)" />
-        <input type="text" name="required_education" placeholder="Required Education" />
-        <input type="text" name="industry" placeholder="Industry *" required />
-        <input type="text" name="function" placeholder="Function" />
-        <div class="grid-full"><button type="submit" class="btn btn-orange full">PREDICT FRAUD</button></div>
+    <div class="card-head"><div class="card-icon gear">⚙️</div><h3>More Control? Use Our Detailed Form</h3></div>
+    <div class="form-surface">
+    <form class="grid" action="{{ url_for('predict_page') }}" method="post" aria-label="Detailed form">
+        <input type="text" name="title" placeholder="Title *" aria-label="Job title" required />
+        <input type="text" name="department" placeholder="Department" aria-label="Department" />
+        <input type="text" name="location" placeholder="Location *" aria-label="Location" required />
+        <input type="text" name="salary_range" placeholder="Salary Range" aria-label="Salary range" />
+        <input type="text" name="company_profile" placeholder="Company Profile *" aria-label="Company profile" required />
+        <input type="text" name="requirements" placeholder="Requirements *" aria-label="Requirements" required />
+        <input type="text" name="description" placeholder="Description *" aria-label="Description" required />
+        <input type="text" name="benefits" placeholder="Benefits *" aria-label="Benefits" required />
+        <input type="text" name="has_company_logo" placeholder="Has Company Logo (Yes/No)" aria-label="Has company logo Yes or No" />
+        <input type="text" name="telecommuting" placeholder="Telecommuting (Yes/No)" aria-label="Telecommuting Yes or No" />
+        <input type="text" name="has_questions" placeholder="Has Questions (Yes/No)" aria-label="Has questions Yes or No" />
+        <input type="text" name="required_education" placeholder="Required Education" aria-label="Required education" />
+        <input type="text" name="industry" placeholder="Industry *" aria-label="Industry" required />
+        <input type="text" name="function" placeholder="Function" aria-label="Function" />
+        <div class="grid-full"><button type="submit" class="btn btn-orange full" aria-label="Predict fraud">PREDICT FRAUD</button></div>
       </form>
     </section>
   </main>
-<footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-brand">
-      <span class="logo-mark">
-        <img src="{{ url_for('static', filename='logo.png') }}" alt="FraudAlert logo" />
-      </span>
-      <span class="brand-text">FraudAlert</span>
-    </div>
-    <div class="footer-contact">
-      <div><strong>Email:</strong> <a href="mailto:you@example.com">devshree485@gmail.com</a></div>
-      <div><strong>Phone:</strong> <a href="tel:+91XXXXXXXXXX">+91-7219854481</a></div>
-      <div><strong>Location:</strong> Pune, India</div>
-    </div>
-    <div class="footer-links">
-      <a href="{{ url_for('about') }}">About</a>
-      <a href="{{ url_for('how') }}">How It Works</a>
-      <a href="{{ url_for('contact') }}">Contact</a>
-    </div>
-  </div>
-  <div class="footer-bar">
-    <span>© {{ 2025 }} FraudAlert • v1.0.0</span>
-  </div>
-</footer>
 
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark">
+          <img src="{{ url_for('static', filename='logo.svg') }}" alt="FraudAlert logo" />
+        </span>
+        <span class="brand-text">FraudAlert</span>
+      </div>
+      <div class="footer-contact">
+        <div><strong>Email:</strong> <a href="mailto:devshree485@gmail.com">devshree485@gmail.com</a></div>
+        <div><strong>Phone:</strong> <a href="tel:+917219854481">+91-7219854481</a></div>
+        <div><strong>Location:</strong> Pune, India</div>
+      </div>
+      <div class="footer-links">
+        <a href="{{ url_for('about') }}">About</a>
+        <a href="{{ url_for('how') }}">How It Works</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bar">
+      <span>© {{ APP_VERSION if APP_VERSION else '1.0.0' }} FraudAlert • {{ MODEL_NAME if MODEL_NAME else 'Model' }}</span>
+    </div>
+  </footer>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const fileInput = document.getElementById('jd_file');
+    const nameEl = document.getElementById('file_name');
+    if (fileInput){
+      fileInput.addEventListener('change', () => {
+        const f = fileInput.files && fileInput.files[0];
+        nameEl.textContent = f ? f.name : '';
+      });
+    }
+  });
+
+   document.addEventListener('DOMContentLoaded', () => {
+   const t = document.querySelector('.samples-toggle');
+   const p = document.getElementById('samples_panel');
+   if (t && p) {
+     const hide = () => { p.classList.add('is-hidden'); t.setAttribute('aria-expanded','false'); t.textContent='Try samples'; };
+     const show = () => { p.classList.remove('is-hidden'); t.setAttribute('aria-expanded','true'); t.textContent='Hide samples'; };
+     hide(); // ensure hidden on load
+     t.addEventListener('click', () => p.classList.contains('is-hidden') ? show() : hide());
+   }
+  });
+</script>
 </body>
 </html>

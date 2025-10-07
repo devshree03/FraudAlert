@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="iris" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"  stop-color="#13d3c6"/>
+      <stop offset="100%" stop-color="#0fbdb3"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Dark badge with orange ring -->
+  <rect x="16" y="16" width="224" height="224" rx="36" fill="#0c1f37"/>
+  <rect x="16" y="16" width="224" height="224" rx="36" fill="none" stroke="#ff9f43" stroke-width="12"/>
+
+  <!-- Eye outline: bold for tiny sizes -->
+  <path d="M32 128c28-40 64-64 96-64s68 24 96 64c-28 40-64 64-96 64s-68-24-96-64z"
+        fill="#132a48" stroke="#eafffb" stroke-width="6"/>
+
+  <!-- Iris + pupil -->
+  <circle cx="128" cy="128" r="34" fill="url(#iris)" stroke="#eafffb" stroke-width="4"/>
+  <circle cx="128" cy="128" r="14" fill="#0b1f36"/>
+
+  <!-- Highlight for clarity -->
+  <circle cx="118" cy="118" r="5" fill="#ffffff" opacity=".95"/>
+
+  <!-- Simplified scan tick (kept minimal) -->
+  <path d="M92 128a36 36 0 0 1 72 0" fill="none" stroke="#44e1d7" stroke-width="4" stroke-linecap="round" opacity=".85"/>
+</svg>
