@@ -6894,3 +6894,1289 @@ Traceback (most recent call last):
     raise NotFound() from None
 werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
 [2025-10-07 15:39:57] INFO 127.0.0.1 - - [07/Oct/2025 15:39:57] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 15:58:11] INFO Logging initialized -> logs\fraudalert.log
+[2025-10-07 15:58:11] INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-10-07 15:58:11] INFO [33mPress CTRL+C to quit[0m
+[2025-10-07 15:58:13] INFO 127.0.0.1 - - [07/Oct/2025 15:58:13] "GET / HTTP/1.1" 200 -
+[2025-10-07 15:58:13] INFO 127.0.0.1 - - [07/Oct/2025 15:58:13] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 15:58:13] INFO 127.0.0.1 - - [07/Oct/2025 15:58:13] "GET /static/style.css?v=3 HTTP/1.1" 200 -
+[2025-10-07 15:58:14] ERROR rid=9a2d89f5 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 15:58:14] INFO 127.0.0.1 - - [07/Oct/2025 15:58:14] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 15:58:17] INFO 127.0.0.1 - - [07/Oct/2025 15:58:17] "GET /contact HTTP/1.1" 200 -
+[2025-10-07 15:58:17] INFO 127.0.0.1 - - [07/Oct/2025 15:58:17] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 15:58:17] INFO 127.0.0.1 - - [07/Oct/2025 15:58:17] "GET /static/style.css HTTP/1.1" 200 -
+[2025-10-07 15:58:17] ERROR rid=6bb0a62c route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 15:58:17] INFO 127.0.0.1 - - [07/Oct/2025 15:58:17] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 15:59:24] INFO 127.0.0.1 - - [07/Oct/2025 15:59:24] "GET /contact HTTP/1.1" 200 -
+[2025-10-07 15:59:25] INFO 127.0.0.1 - - [07/Oct/2025 15:59:25] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 15:59:25] INFO 127.0.0.1 - - [07/Oct/2025 15:59:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 15:59:25] ERROR rid=a5b7153a route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 15:59:25] INFO 127.0.0.1 - - [07/Oct/2025 15:59:25] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 15:59:27] INFO 127.0.0.1 - - [07/Oct/2025 15:59:27] "GET /how-it-works HTTP/1.1" 200 -
+[2025-10-07 15:59:27] INFO 127.0.0.1 - - [07/Oct/2025 15:59:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 15:59:27] INFO 127.0.0.1 - - [07/Oct/2025 15:59:27] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 15:59:27] ERROR rid=357f2199 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 15:59:27] INFO 127.0.0.1 - - [07/Oct/2025 15:59:27] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 15:59:29] INFO 127.0.0.1 - - [07/Oct/2025 15:59:29] "GET /about HTTP/1.1" 200 -
+[2025-10-07 15:59:29] INFO 127.0.0.1 - - [07/Oct/2025 15:59:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 15:59:29] INFO 127.0.0.1 - - [07/Oct/2025 15:59:29] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 15:59:29] INFO 127.0.0.1 - - [07/Oct/2025 15:59:29] "[36mGET /static/me2.png HTTP/1.1[0m" 304 -
+[2025-10-07 15:59:29] ERROR rid=649aa3dc route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 15:59:29] INFO 127.0.0.1 - - [07/Oct/2025 15:59:29] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 15:59:32] INFO 127.0.0.1 - - [07/Oct/2025 15:59:32] "GET /contact HTTP/1.1" 200 -
+[2025-10-07 15:59:32] INFO 127.0.0.1 - - [07/Oct/2025 15:59:32] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 15:59:32] INFO 127.0.0.1 - - [07/Oct/2025 15:59:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 15:59:32] ERROR rid=562b27bf route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 15:59:32] INFO 127.0.0.1 - - [07/Oct/2025 15:59:32] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 16:05:56] INFO Logging initialized -> logs\fraudalert.log
+[2025-10-07 16:05:56] INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-10-07 16:05:56] INFO [33mPress CTRL+C to quit[0m
+[2025-10-07 16:06:01] INFO 127.0.0.1 - - [07/Oct/2025 16:06:01] "GET / HTTP/1.1" 200 -
+[2025-10-07 16:06:01] INFO 127.0.0.1 - - [07/Oct/2025 16:06:01] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 16:06:01] INFO 127.0.0.1 - - [07/Oct/2025 16:06:01] "GET /static/style.css?v=3 HTTP/1.1" 200 -
+[2025-10-07 16:06:01] ERROR rid=d00accd9 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 16:06:01] INFO 127.0.0.1 - - [07/Oct/2025 16:06:01] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 16:06:06] INFO 127.0.0.1 - - [07/Oct/2025 16:06:06] "GET /contact HTTP/1.1" 200 -
+[2025-10-07 16:06:06] INFO 127.0.0.1 - - [07/Oct/2025 16:06:06] "GET /static/style.css HTTP/1.1" 200 -
+[2025-10-07 16:06:06] INFO 127.0.0.1 - - [07/Oct/2025 16:06:06] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 16:06:06] ERROR rid=230285c3 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 16:06:06] INFO 127.0.0.1 - - [07/Oct/2025 16:06:06] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 16:10:37] INFO Logging initialized -> logs\fraudalert.log
+[2025-10-07 16:10:37] INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-10-07 16:10:37] INFO [33mPress CTRL+C to quit[0m
+[2025-10-07 16:10:41] INFO 127.0.0.1 - - [07/Oct/2025 16:10:41] "GET / HTTP/1.1" 200 -
+[2025-10-07 16:10:41] INFO 127.0.0.1 - - [07/Oct/2025 16:10:41] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 16:10:41] INFO 127.0.0.1 - - [07/Oct/2025 16:10:41] "[36mGET /static/style.css?v=3 HTTP/1.1[0m" 304 -
+[2025-10-07 16:10:41] ERROR rid=b47342c7 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 16:10:41] INFO 127.0.0.1 - - [07/Oct/2025 16:10:41] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 16:10:44] INFO 127.0.0.1 - - [07/Oct/2025 16:10:44] "GET /contact HTTP/1.1" 200 -
+[2025-10-07 16:10:44] INFO 127.0.0.1 - - [07/Oct/2025 16:10:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 16:10:44] INFO 127.0.0.1 - - [07/Oct/2025 16:10:44] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 16:10:44] ERROR rid=fb249da4 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 16:10:44] INFO 127.0.0.1 - - [07/Oct/2025 16:10:44] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 16:13:36] INFO Logging initialized -> logs\fraudalert.log
+[2025-10-07 16:13:36] INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-10-07 16:13:36] INFO [33mPress CTRL+C to quit[0m
+[2025-10-07 16:13:40] INFO 127.0.0.1 - - [07/Oct/2025 16:13:40] "GET / HTTP/1.1" 200 -
+[2025-10-07 16:13:40] INFO 127.0.0.1 - - [07/Oct/2025 16:13:40] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 16:13:40] INFO 127.0.0.1 - - [07/Oct/2025 16:13:40] "GET /static/style.css?v=3 HTTP/1.1" 200 -
+[2025-10-07 16:13:40] ERROR rid=1bd8395b route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 16:13:40] INFO 127.0.0.1 - - [07/Oct/2025 16:13:40] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 16:13:42] INFO 127.0.0.1 - - [07/Oct/2025 16:13:42] "GET /contact HTTP/1.1" 200 -
+[2025-10-07 16:13:42] INFO 127.0.0.1 - - [07/Oct/2025 16:13:42] "GET /static/style.css HTTP/1.1" 200 -
+[2025-10-07 16:13:42] INFO 127.0.0.1 - - [07/Oct/2025 16:13:42] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 16:13:43] ERROR rid=4a2aaf05 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 16:13:43] INFO 127.0.0.1 - - [07/Oct/2025 16:13:43] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 16:14:19] INFO Logging initialized -> logs\fraudalert.log
+[2025-10-07 16:14:19] INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-10-07 16:14:19] INFO [33mPress CTRL+C to quit[0m
+[2025-10-07 16:14:21] INFO 127.0.0.1 - - [07/Oct/2025 16:14:21] "GET / HTTP/1.1" 200 -
+[2025-10-07 16:14:21] INFO 127.0.0.1 - - [07/Oct/2025 16:14:21] "[36mGET /static/style.css?v=3 HTTP/1.1[0m" 304 -
+[2025-10-07 16:14:21] INFO 127.0.0.1 - - [07/Oct/2025 16:14:21] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 16:14:22] ERROR rid=621ae771 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 16:14:22] INFO 127.0.0.1 - - [07/Oct/2025 16:14:22] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 16:14:24] INFO 127.0.0.1 - - [07/Oct/2025 16:14:24] "GET /contact HTTP/1.1" 200 -
+[2025-10-07 16:14:24] INFO 127.0.0.1 - - [07/Oct/2025 16:14:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 16:14:24] INFO 127.0.0.1 - - [07/Oct/2025 16:14:24] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 16:14:24] ERROR rid=716d1735 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 16:14:24] INFO 127.0.0.1 - - [07/Oct/2025 16:14:24] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 16:18:08] INFO feedback name=Devyani Patil email=devshree485@gmail.com phone= len=7
+[2025-10-07 16:18:08] INFO 127.0.0.1 - - [07/Oct/2025 16:18:08] "POST /feedback HTTP/1.1" 200 -
+[2025-10-07 16:18:08] INFO 127.0.0.1 - - [07/Oct/2025 16:18:08] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 16:18:08] INFO 127.0.0.1 - - [07/Oct/2025 16:18:08] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 16:18:08] ERROR rid=877e6301 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 16:18:08] INFO 127.0.0.1 - - [07/Oct/2025 16:18:08] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 16:18:14] INFO 127.0.0.1 - - [07/Oct/2025 16:18:14] "GET / HTTP/1.1" 200 -
+[2025-10-07 16:18:14] INFO 127.0.0.1 - - [07/Oct/2025 16:18:14] "[36mGET /static/style.css?v=3 HTTP/1.1[0m" 304 -
+[2025-10-07 16:18:14] INFO 127.0.0.1 - - [07/Oct/2025 16:18:14] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 16:18:14] ERROR rid=b3be8495 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 16:18:14] INFO 127.0.0.1 - - [07/Oct/2025 16:18:14] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 16:18:18] INFO 127.0.0.1 - - [07/Oct/2025 16:18:18] "GET /contact HTTP/1.1" 200 -
+[2025-10-07 16:18:18] INFO 127.0.0.1 - - [07/Oct/2025 16:18:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 16:18:18] INFO 127.0.0.1 - - [07/Oct/2025 16:18:18] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 16:18:18] ERROR rid=42bce792 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 16:18:18] INFO 127.0.0.1 - - [07/Oct/2025 16:18:18] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 16:18:30] INFO Logging initialized -> logs\fraudalert.log
+[2025-10-07 16:18:30] INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-10-07 16:18:30] INFO [33mPress CTRL+C to quit[0m
+[2025-10-07 16:18:37] INFO 127.0.0.1 - - [07/Oct/2025 16:18:37] "GET / HTTP/1.1" 200 -
+[2025-10-07 16:18:37] INFO 127.0.0.1 - - [07/Oct/2025 16:18:37] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 16:18:37] INFO 127.0.0.1 - - [07/Oct/2025 16:18:37] "[36mGET /static/style.css?v=3 HTTP/1.1[0m" 304 -
+[2025-10-07 16:18:37] ERROR rid=e2627043 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 16:18:37] INFO 127.0.0.1 - - [07/Oct/2025 16:18:37] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 16:18:40] INFO 127.0.0.1 - - [07/Oct/2025 16:18:40] "GET /contact HTTP/1.1" 200 -
+[2025-10-07 16:18:40] INFO 127.0.0.1 - - [07/Oct/2025 16:18:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 16:18:40] INFO 127.0.0.1 - - [07/Oct/2025 16:18:40] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 16:18:40] ERROR rid=7b834695 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 16:18:40] INFO 127.0.0.1 - - [07/Oct/2025 16:18:40] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 16:19:49] INFO 127.0.0.1 - - [07/Oct/2025 16:19:49] "GET / HTTP/1.1" 200 -
+[2025-10-07 16:19:49] INFO 127.0.0.1 - - [07/Oct/2025 16:19:49] "[36mGET /static/style.css?v=3 HTTP/1.1[0m" 304 -
+[2025-10-07 16:19:49] INFO 127.0.0.1 - - [07/Oct/2025 16:19:49] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 16:19:49] ERROR rid=89a83bad route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 16:19:49] INFO 127.0.0.1 - - [07/Oct/2025 16:19:49] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 16:19:50] INFO 127.0.0.1 - - [07/Oct/2025 16:19:50] "GET /about HTTP/1.1" 200 -
+[2025-10-07 16:19:50] INFO 127.0.0.1 - - [07/Oct/2025 16:19:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 16:19:50] INFO 127.0.0.1 - - [07/Oct/2025 16:19:50] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 16:19:50] INFO 127.0.0.1 - - [07/Oct/2025 16:19:50] "[36mGET /static/me2.png HTTP/1.1[0m" 304 -
+[2025-10-07 16:19:50] ERROR rid=e91bace8 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 16:19:50] INFO 127.0.0.1 - - [07/Oct/2025 16:19:50] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 16:19:51] INFO 127.0.0.1 - - [07/Oct/2025 16:19:51] "GET /how-it-works HTTP/1.1" 200 -
+[2025-10-07 16:19:51] INFO 127.0.0.1 - - [07/Oct/2025 16:19:51] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 16:19:51] INFO 127.0.0.1 - - [07/Oct/2025 16:19:51] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 16:19:51] ERROR rid=01f77fd7 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 16:19:51] INFO 127.0.0.1 - - [07/Oct/2025 16:19:51] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 16:19:53] INFO 127.0.0.1 - - [07/Oct/2025 16:19:53] "GET /contact HTTP/1.1" 200 -
+[2025-10-07 16:19:53] INFO 127.0.0.1 - - [07/Oct/2025 16:19:53] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 16:19:53] INFO 127.0.0.1 - - [07/Oct/2025 16:19:53] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 16:19:53] ERROR rid=c53dde97 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 16:19:53] INFO 127.0.0.1 - - [07/Oct/2025 16:19:53] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 16:19:58] INFO 127.0.0.1 - - [07/Oct/2025 16:19:58] "GET /about HTTP/1.1" 200 -
+[2025-10-07 16:19:58] INFO 127.0.0.1 - - [07/Oct/2025 16:19:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 16:19:58] INFO 127.0.0.1 - - [07/Oct/2025 16:19:58] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 16:19:58] INFO 127.0.0.1 - - [07/Oct/2025 16:19:58] "[36mGET /static/me2.png HTTP/1.1[0m" 304 -
+[2025-10-07 16:19:58] ERROR rid=5de4918f route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 16:19:58] INFO 127.0.0.1 - - [07/Oct/2025 16:19:58] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 16:19:59] INFO 127.0.0.1 - - [07/Oct/2025 16:19:59] "GET /how-it-works HTTP/1.1" 200 -
+[2025-10-07 16:19:59] INFO 127.0.0.1 - - [07/Oct/2025 16:19:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 16:19:59] INFO 127.0.0.1 - - [07/Oct/2025 16:19:59] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 16:19:59] ERROR rid=931df693 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 16:19:59] INFO 127.0.0.1 - - [07/Oct/2025 16:19:59] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 16:20:04] INFO 127.0.0.1 - - [07/Oct/2025 16:20:04] "GET /contact HTTP/1.1" 200 -
+[2025-10-07 16:20:04] INFO 127.0.0.1 - - [07/Oct/2025 16:20:04] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 16:20:04] INFO 127.0.0.1 - - [07/Oct/2025 16:20:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 16:20:04] ERROR rid=630eed40 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 16:20:04] INFO 127.0.0.1 - - [07/Oct/2025 16:20:04] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 16:20:15] INFO 127.0.0.1 - - [07/Oct/2025 16:20:15] "GET / HTTP/1.1" 200 -
+[2025-10-07 16:20:15] INFO 127.0.0.1 - - [07/Oct/2025 16:20:15] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 16:20:15] INFO 127.0.0.1 - - [07/Oct/2025 16:20:15] "[36mGET /static/style.css?v=3 HTTP/1.1[0m" 304 -
+[2025-10-07 16:20:15] ERROR rid=d332b4b7 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 16:20:15] INFO 127.0.0.1 - - [07/Oct/2025 16:20:15] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 16:20:17] INFO 127.0.0.1 - - [07/Oct/2025 16:20:17] "GET /about HTTP/1.1" 200 -
+[2025-10-07 16:20:17] INFO 127.0.0.1 - - [07/Oct/2025 16:20:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 16:20:17] INFO 127.0.0.1 - - [07/Oct/2025 16:20:17] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 16:20:17] INFO 127.0.0.1 - - [07/Oct/2025 16:20:17] "[36mGET /static/me2.png HTTP/1.1[0m" 304 -
+[2025-10-07 16:20:17] ERROR rid=ec3c0d36 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 16:20:17] INFO 127.0.0.1 - - [07/Oct/2025 16:20:17] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 16:22:15] INFO 127.0.0.1 - - [07/Oct/2025 16:22:15] "GET /contact HTTP/1.1" 200 -
+[2025-10-07 16:22:15] INFO 127.0.0.1 - - [07/Oct/2025 16:22:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 16:22:15] INFO 127.0.0.1 - - [07/Oct/2025 16:22:15] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 16:22:15] ERROR rid=c7c184c4 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 16:22:15] INFO 127.0.0.1 - - [07/Oct/2025 16:22:15] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 16:24:05] INFO Logging initialized -> logs\fraudalert.log
+[2025-10-07 16:24:05] INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-10-07 16:24:05] INFO [33mPress CTRL+C to quit[0m
+[2025-10-07 16:24:07] INFO 127.0.0.1 - - [07/Oct/2025 16:24:07] "GET / HTTP/1.1" 200 -
+[2025-10-07 16:24:08] INFO 127.0.0.1 - - [07/Oct/2025 16:24:08] "[36mGET /static/style.css?v=3 HTTP/1.1[0m" 304 -
+[2025-10-07 16:24:08] INFO 127.0.0.1 - - [07/Oct/2025 16:24:08] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 16:24:08] ERROR rid=7ecbd094 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 16:24:08] INFO 127.0.0.1 - - [07/Oct/2025 16:24:08] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 16:24:10] INFO 127.0.0.1 - - [07/Oct/2025 16:24:10] "GET /contact HTTP/1.1" 200 -
+[2025-10-07 16:24:10] INFO 127.0.0.1 - - [07/Oct/2025 16:24:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 16:24:10] INFO 127.0.0.1 - - [07/Oct/2025 16:24:10] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 16:24:10] ERROR rid=5013869b route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 16:24:10] INFO 127.0.0.1 - - [07/Oct/2025 16:24:10] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 16:24:13] INFO 127.0.0.1 - - [07/Oct/2025 16:24:13] "GET /how-it-works HTTP/1.1" 200 -
+[2025-10-07 16:24:13] INFO 127.0.0.1 - - [07/Oct/2025 16:24:13] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 16:24:13] INFO 127.0.0.1 - - [07/Oct/2025 16:24:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 16:24:13] ERROR rid=3ca244c9 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 16:24:13] INFO 127.0.0.1 - - [07/Oct/2025 16:24:13] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 16:24:15] INFO 127.0.0.1 - - [07/Oct/2025 16:24:15] "GET /about HTTP/1.1" 200 -
+[2025-10-07 16:24:15] INFO 127.0.0.1 - - [07/Oct/2025 16:24:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 16:24:15] INFO 127.0.0.1 - - [07/Oct/2025 16:24:15] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 16:24:15] INFO 127.0.0.1 - - [07/Oct/2025 16:24:15] "[36mGET /static/me2.png HTTP/1.1[0m" 304 -
+[2025-10-07 16:24:15] ERROR rid=75238d81 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 16:24:15] INFO 127.0.0.1 - - [07/Oct/2025 16:24:15] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 16:24:17] INFO 127.0.0.1 - - [07/Oct/2025 16:24:17] "GET / HTTP/1.1" 200 -
+[2025-10-07 16:24:17] INFO 127.0.0.1 - - [07/Oct/2025 16:24:17] "[36mGET /static/style.css?v=3 HTTP/1.1[0m" 304 -
+[2025-10-07 16:24:17] INFO 127.0.0.1 - - [07/Oct/2025 16:24:17] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 16:24:17] ERROR rid=903ec27c route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 16:24:17] INFO 127.0.0.1 - - [07/Oct/2025 16:24:17] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 16:24:32] INFO 127.0.0.1 - - [07/Oct/2025 16:24:32] "GET / HTTP/1.1" 200 -
+[2025-10-07 16:24:32] INFO 127.0.0.1 - - [07/Oct/2025 16:24:32] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 16:24:32] INFO 127.0.0.1 - - [07/Oct/2025 16:24:32] "[36mGET /static/style.css?v=3 HTTP/1.1[0m" 304 -
+[2025-10-07 16:24:32] ERROR rid=97b7dc42 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 16:24:32] INFO 127.0.0.1 - - [07/Oct/2025 16:24:32] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 16:24:34] INFO 127.0.0.1 - - [07/Oct/2025 16:24:34] "GET /about HTTP/1.1" 200 -
+[2025-10-07 16:24:34] INFO 127.0.0.1 - - [07/Oct/2025 16:24:34] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 16:24:34] INFO 127.0.0.1 - - [07/Oct/2025 16:24:34] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 16:24:34] INFO 127.0.0.1 - - [07/Oct/2025 16:24:34] "[36mGET /static/me2.png HTTP/1.1[0m" 304 -
+[2025-10-07 16:24:34] ERROR rid=81c03cc1 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 16:24:34] INFO 127.0.0.1 - - [07/Oct/2025 16:24:34] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 16:24:41] INFO 127.0.0.1 - - [07/Oct/2025 16:24:41] "GET /how-it-works HTTP/1.1" 200 -
+[2025-10-07 16:24:41] INFO 127.0.0.1 - - [07/Oct/2025 16:24:41] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 16:24:41] INFO 127.0.0.1 - - [07/Oct/2025 16:24:41] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 16:24:41] ERROR rid=b5337ff0 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 16:24:41] INFO 127.0.0.1 - - [07/Oct/2025 16:24:41] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 16:24:42] INFO 127.0.0.1 - - [07/Oct/2025 16:24:42] "GET /contact HTTP/1.1" 200 -
+[2025-10-07 16:24:42] INFO 127.0.0.1 - - [07/Oct/2025 16:24:42] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 16:24:42] INFO 127.0.0.1 - - [07/Oct/2025 16:24:42] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 16:24:42] ERROR rid=b749da27 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 16:24:42] INFO 127.0.0.1 - - [07/Oct/2025 16:24:42] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 16:53:31] INFO 127.0.0.1 - - [07/Oct/2025 16:53:31] "GET /how-it-works HTTP/1.1" 200 -
+[2025-10-07 16:53:31] INFO 127.0.0.1 - - [07/Oct/2025 16:53:31] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 16:53:31] INFO 127.0.0.1 - - [07/Oct/2025 16:53:31] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 16:53:31] ERROR rid=9ee1f6cb route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 16:53:31] INFO 127.0.0.1 - - [07/Oct/2025 16:53:31] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 16:53:33] INFO 127.0.0.1 - - [07/Oct/2025 16:53:33] "GET /about HTTP/1.1" 200 -
+[2025-10-07 16:53:33] INFO 127.0.0.1 - - [07/Oct/2025 16:53:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 16:53:33] INFO 127.0.0.1 - - [07/Oct/2025 16:53:33] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 16:53:33] INFO 127.0.0.1 - - [07/Oct/2025 16:53:33] "[36mGET /static/me2.png HTTP/1.1[0m" 304 -
+[2025-10-07 16:53:33] ERROR rid=047fc65e route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 16:53:33] INFO 127.0.0.1 - - [07/Oct/2025 16:53:33] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 17:03:49] INFO Logging initialized -> logs\fraudalert.log
+[2025-10-07 17:03:50] INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-10-07 17:03:50] INFO [33mPress CTRL+C to quit[0m
+[2025-10-07 17:03:53] INFO 127.0.0.1 - - [07/Oct/2025 17:03:53] "GET / HTTP/1.1" 200 -
+[2025-10-07 17:03:54] INFO 127.0.0.1 - - [07/Oct/2025 17:03:54] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 17:03:54] INFO 127.0.0.1 - - [07/Oct/2025 17:03:54] "GET /static/style.css?v=3 HTTP/1.1" 200 -
+[2025-10-07 17:03:54] ERROR rid=b753ff94 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 17:03:54] INFO 127.0.0.1 - - [07/Oct/2025 17:03:54] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 17:04:00] INFO 127.0.0.1 - - [07/Oct/2025 17:04:00] "GET /about HTTP/1.1" 200 -
+[2025-10-07 17:04:00] INFO 127.0.0.1 - - [07/Oct/2025 17:04:00] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 17:04:00] INFO 127.0.0.1 - - [07/Oct/2025 17:04:00] "GET /static/style.css HTTP/1.1" 200 -
+[2025-10-07 17:04:00] INFO 127.0.0.1 - - [07/Oct/2025 17:04:00] "[36mGET /static/me2.png HTTP/1.1[0m" 304 -
+[2025-10-07 17:04:00] ERROR rid=5cfe1a9e route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 17:04:00] INFO 127.0.0.1 - - [07/Oct/2025 17:04:00] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 17:04:04] INFO 127.0.0.1 - - [07/Oct/2025 17:04:04] "GET /how-it-works HTTP/1.1" 200 -
+[2025-10-07 17:04:04] INFO 127.0.0.1 - - [07/Oct/2025 17:04:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 17:04:04] INFO 127.0.0.1 - - [07/Oct/2025 17:04:04] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 17:04:04] ERROR rid=3ecfa0a1 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 17:04:04] INFO 127.0.0.1 - - [07/Oct/2025 17:04:04] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 17:04:44] INFO 127.0.0.1 - - [07/Oct/2025 17:04:44] "GET /how-it-works HTTP/1.1" 200 -
+[2025-10-07 17:04:44] INFO 127.0.0.1 - - [07/Oct/2025 17:04:44] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 17:04:44] INFO 127.0.0.1 - - [07/Oct/2025 17:04:44] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 17:04:44] ERROR rid=21f50aac route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 17:04:44] INFO 127.0.0.1 - - [07/Oct/2025 17:04:44] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 17:05:03] INFO 127.0.0.1 - - [07/Oct/2025 17:05:03] "GET / HTTP/1.1" 200 -
+[2025-10-07 17:05:03] INFO 127.0.0.1 - - [07/Oct/2025 17:05:03] "[36mGET /static/style.css?v=3 HTTP/1.1[0m" 304 -
+[2025-10-07 17:05:03] INFO 127.0.0.1 - - [07/Oct/2025 17:05:03] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 17:05:03] ERROR rid=23400881 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 17:05:03] INFO 127.0.0.1 - - [07/Oct/2025 17:05:03] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 17:05:05] INFO 127.0.0.1 - - [07/Oct/2025 17:05:05] "GET /about HTTP/1.1" 200 -
+[2025-10-07 17:05:05] INFO 127.0.0.1 - - [07/Oct/2025 17:05:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 17:05:05] INFO 127.0.0.1 - - [07/Oct/2025 17:05:05] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 17:05:05] INFO 127.0.0.1 - - [07/Oct/2025 17:05:05] "[36mGET /static/me2.png HTTP/1.1[0m" 304 -
+[2025-10-07 17:05:05] ERROR rid=8305e5cd route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 17:05:05] INFO 127.0.0.1 - - [07/Oct/2025 17:05:05] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 17:05:07] INFO 127.0.0.1 - - [07/Oct/2025 17:05:07] "GET /how-it-works HTTP/1.1" 200 -
+[2025-10-07 17:05:07] INFO 127.0.0.1 - - [07/Oct/2025 17:05:07] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 17:05:07] INFO 127.0.0.1 - - [07/Oct/2025 17:05:07] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 17:05:07] ERROR rid=9eea1455 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 17:05:07] INFO 127.0.0.1 - - [07/Oct/2025 17:05:07] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 17:05:09] INFO 127.0.0.1 - - [07/Oct/2025 17:05:09] "GET /contact HTTP/1.1" 200 -
+[2025-10-07 17:05:09] INFO 127.0.0.1 - - [07/Oct/2025 17:05:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 17:05:09] INFO 127.0.0.1 - - [07/Oct/2025 17:05:09] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 17:05:09] ERROR rid=5d145c93 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 17:05:09] INFO 127.0.0.1 - - [07/Oct/2025 17:05:09] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 17:06:58] INFO 127.0.0.1 - - [07/Oct/2025 17:06:58] "GET /how-it-works HTTP/1.1" 200 -
+[2025-10-07 17:06:58] INFO 127.0.0.1 - - [07/Oct/2025 17:06:58] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 17:06:58] INFO 127.0.0.1 - - [07/Oct/2025 17:06:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 17:06:58] ERROR rid=475b7a99 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 17:06:58] INFO 127.0.0.1 - - [07/Oct/2025 17:06:58] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 17:07:00] INFO 127.0.0.1 - - [07/Oct/2025 17:07:00] "GET / HTTP/1.1" 200 -
+[2025-10-07 17:07:00] INFO 127.0.0.1 - - [07/Oct/2025 17:07:00] "[36mGET /static/style.css?v=3 HTTP/1.1[0m" 304 -
+[2025-10-07 17:07:00] INFO 127.0.0.1 - - [07/Oct/2025 17:07:00] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 17:07:00] ERROR rid=dcae721b route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 17:07:00] INFO 127.0.0.1 - - [07/Oct/2025 17:07:00] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 17:07:01] INFO 127.0.0.1 - - [07/Oct/2025 17:07:01] "GET /about HTTP/1.1" 200 -
+[2025-10-07 17:07:01] INFO 127.0.0.1 - - [07/Oct/2025 17:07:01] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 17:07:01] INFO 127.0.0.1 - - [07/Oct/2025 17:07:01] "[36mGET /static/me2.png HTTP/1.1[0m" 304 -
+[2025-10-07 17:07:01] INFO 127.0.0.1 - - [07/Oct/2025 17:07:01] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 17:07:01] ERROR rid=360c539e route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 17:07:01] INFO 127.0.0.1 - - [07/Oct/2025 17:07:01] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 17:07:03] INFO 127.0.0.1 - - [07/Oct/2025 17:07:03] "GET /contact HTTP/1.1" 200 -
+[2025-10-07 17:07:03] INFO 127.0.0.1 - - [07/Oct/2025 17:07:03] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 17:07:03] INFO 127.0.0.1 - - [07/Oct/2025 17:07:03] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 17:07:03] ERROR rid=a10ee4b0 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 17:07:03] INFO 127.0.0.1 - - [07/Oct/2025 17:07:03] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 17:09:28] INFO Logging initialized -> logs\fraudalert.log
+[2025-10-07 17:09:28] INFO [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[2025-10-07 17:09:28] INFO [33mPress CTRL+C to quit[0m
+[2025-10-07 17:09:32] INFO 127.0.0.1 - - [07/Oct/2025 17:09:32] "GET / HTTP/1.1" 200 -
+[2025-10-07 17:09:32] INFO 127.0.0.1 - - [07/Oct/2025 17:09:32] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 17:09:32] INFO 127.0.0.1 - - [07/Oct/2025 17:09:32] "GET /static/style.css?v=3 HTTP/1.1" 200 -
+[2025-10-07 17:09:32] ERROR rid=9e126f21 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 17:09:32] INFO 127.0.0.1 - - [07/Oct/2025 17:09:32] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 17:09:34] INFO 127.0.0.1 - - [07/Oct/2025 17:09:34] "GET /about HTTP/1.1" 200 -
+[2025-10-07 17:09:34] INFO 127.0.0.1 - - [07/Oct/2025 17:09:34] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 17:09:34] INFO 127.0.0.1 - - [07/Oct/2025 17:09:34] "GET /static/style.css HTTP/1.1" 200 -
+[2025-10-07 17:09:34] INFO 127.0.0.1 - - [07/Oct/2025 17:09:34] "[36mGET /static/me2.png HTTP/1.1[0m" 304 -
+[2025-10-07 17:09:34] ERROR rid=b02df71a route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 17:09:34] INFO 127.0.0.1 - - [07/Oct/2025 17:09:34] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 17:09:36] INFO 127.0.0.1 - - [07/Oct/2025 17:09:36] "GET /how-it-works HTTP/1.1" 200 -
+[2025-10-07 17:09:36] INFO 127.0.0.1 - - [07/Oct/2025 17:09:36] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 17:09:36] INFO 127.0.0.1 - - [07/Oct/2025 17:09:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 17:09:37] ERROR rid=9548fb40 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 17:09:37] INFO 127.0.0.1 - - [07/Oct/2025 17:09:37] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 17:09:40] INFO 127.0.0.1 - - [07/Oct/2025 17:09:40] "GET /contact HTTP/1.1" 200 -
+[2025-10-07 17:09:40] INFO 127.0.0.1 - - [07/Oct/2025 17:09:40] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 17:09:40] INFO 127.0.0.1 - - [07/Oct/2025 17:09:40] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 17:09:40] ERROR rid=8e5b5f39 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 17:09:40] INFO 127.0.0.1 - - [07/Oct/2025 17:09:40] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 17:09:54] INFO feedback name=Devyani Patil email=devshree485@gmail.com phone= len=5
+[2025-10-07 17:09:54] INFO 127.0.0.1 - - [07/Oct/2025 17:09:54] "POST /feedback HTTP/1.1" 200 -
+[2025-10-07 17:09:54] INFO 127.0.0.1 - - [07/Oct/2025 17:09:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 17:09:54] INFO 127.0.0.1 - - [07/Oct/2025 17:09:54] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 17:09:54] ERROR rid=07996717 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 17:09:54] INFO 127.0.0.1 - - [07/Oct/2025 17:09:54] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 17:09:56] INFO 127.0.0.1 - - [07/Oct/2025 17:09:56] "GET / HTTP/1.1" 200 -
+[2025-10-07 17:09:56] INFO 127.0.0.1 - - [07/Oct/2025 17:09:56] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 17:09:56] INFO 127.0.0.1 - - [07/Oct/2025 17:09:56] "[36mGET /static/style.css?v=3 HTTP/1.1[0m" 304 -
+[2025-10-07 17:09:56] ERROR rid=93957423 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 17:09:56] INFO 127.0.0.1 - - [07/Oct/2025 17:09:56] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 17:10:05] INFO 127.0.0.1 - - [07/Oct/2025 17:10:05] "GET /how-it-works HTTP/1.1" 200 -
+[2025-10-07 17:10:05] INFO 127.0.0.1 - - [07/Oct/2025 17:10:05] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 17:10:05] INFO 127.0.0.1 - - [07/Oct/2025 17:10:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 17:10:05] ERROR rid=d822598a route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 17:10:05] INFO 127.0.0.1 - - [07/Oct/2025 17:10:05] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 17:10:06] INFO 127.0.0.1 - - [07/Oct/2025 17:10:06] "GET /about HTTP/1.1" 200 -
+[2025-10-07 17:10:06] INFO 127.0.0.1 - - [07/Oct/2025 17:10:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 17:10:06] INFO 127.0.0.1 - - [07/Oct/2025 17:10:06] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 17:10:06] INFO 127.0.0.1 - - [07/Oct/2025 17:10:06] "[36mGET /static/me2.png HTTP/1.1[0m" 304 -
+[2025-10-07 17:10:06] ERROR rid=d5a308b9 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 17:10:06] INFO 127.0.0.1 - - [07/Oct/2025 17:10:06] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 17:10:07] INFO 127.0.0.1 - - [07/Oct/2025 17:10:07] "GET / HTTP/1.1" 200 -
+[2025-10-07 17:10:07] INFO 127.0.0.1 - - [07/Oct/2025 17:10:07] "[36mGET /static/style.css?v=3 HTTP/1.1[0m" 304 -
+[2025-10-07 17:10:07] INFO 127.0.0.1 - - [07/Oct/2025 17:10:07] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 17:10:07] ERROR rid=301599e4 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 17:10:07] INFO 127.0.0.1 - - [07/Oct/2025 17:10:07] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 17:10:17] INFO 127.0.0.1 - - [07/Oct/2025 17:10:17] "GET /about HTTP/1.1" 200 -
+[2025-10-07 17:10:17] INFO 127.0.0.1 - - [07/Oct/2025 17:10:17] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 17:10:17] INFO 127.0.0.1 - - [07/Oct/2025 17:10:17] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 17:10:17] INFO 127.0.0.1 - - [07/Oct/2025 17:10:17] "[36mGET /static/me2.png HTTP/1.1[0m" 304 -
+[2025-10-07 17:10:17] ERROR rid=a91ddbb0 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 17:10:17] INFO 127.0.0.1 - - [07/Oct/2025 17:10:17] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 17:10:20] INFO 127.0.0.1 - - [07/Oct/2025 17:10:20] "GET /how-it-works HTTP/1.1" 200 -
+[2025-10-07 17:10:20] INFO 127.0.0.1 - - [07/Oct/2025 17:10:20] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 17:10:20] INFO 127.0.0.1 - - [07/Oct/2025 17:10:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 17:10:20] ERROR rid=ac4d6522 route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 17:10:20] INFO 127.0.0.1 - - [07/Oct/2025 17:10:20] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 17:10:21] INFO 127.0.0.1 - - [07/Oct/2025 17:10:21] "GET /contact HTTP/1.1" 200 -
+[2025-10-07 17:10:21] INFO 127.0.0.1 - - [07/Oct/2025 17:10:21] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+[2025-10-07 17:10:21] INFO 127.0.0.1 - - [07/Oct/2025 17:10:21] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 17:10:21] ERROR rid=0cc7287f route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 17:10:21] INFO 127.0.0.1 - - [07/Oct/2025 17:10:21] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[2025-10-07 17:10:22] INFO 127.0.0.1 - - [07/Oct/2025 17:10:22] "GET / HTTP/1.1" 200 -
+[2025-10-07 17:10:22] INFO 127.0.0.1 - - [07/Oct/2025 17:10:22] "[36mGET /static/style.css?v=3 HTTP/1.1[0m" 304 -
+[2025-10-07 17:10:22] INFO 127.0.0.1 - - [07/Oct/2025 17:10:22] "[36mGET /static/logo.svg HTTP/1.1[0m" 304 -
+[2025-10-07 17:10:23] ERROR rid=603f4c7a route=unhandled 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+Traceback (most recent call last):
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 891, in dispatch_request
+    self.raise_routing_exception(req)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\app.py", line 500, in raise_routing_exception
+    raise request.routing_exception  # type: ignore[misc]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\flask\ctx.py", line 362, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\91932\AppData\Local\Programs\Python\Python313\Lib\site-packages\werkzeug\routing\map.py", line 629, in match
+    raise NotFound() from None
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+[2025-10-07 17:10:23] INFO 127.0.0.1 - - [07/Oct/2025 17:10:23] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -

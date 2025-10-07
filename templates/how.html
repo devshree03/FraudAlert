@@ -9,11 +9,11 @@
   <nav class="nav">
     <div class="nav-inner">
       <div class="brand">
-       <span class="logo-mark">
-         <img src="{{ url_for('static', filename='logo.svg') }}" alt="FraudAlert logo" />
-       </span>
-       <span class="brand-text">FraudAlert</span>
-     </div>
+        <span class="logo-mark">
+          <img src="{{ url_for('static', filename='logo.svg') }}" alt="FraudAlert logo" />
+        </span>
+        <span class="brand-text">FraudAlert</span>
+      </div>
       <ul class="menu">
         <li><a href="{{ url_for('home') }}">Home</a></li>
         <li><a href="{{ url_for('about') }}">About</a></li>
@@ -22,44 +22,111 @@
       </ul>
     </div>
   </nav>
-  {% include "_hero.html" with context %}
 
-
-
-  <section class="result-page">
-    <div class="result-card">
-      <div class="result-title">How It Works</div>
-      <ol>
-        <li>Ingest the JD via paste, PDF/DOCX, or form.</li>
-        <li>Preprocess text (clean, tokenize, stem) and create TF‑IDF features.</li>
-        <li>Append engineered numeric features (e.g., risky phrases count).</li>
-        <li>Predict with a balanced Logistic Regression and compute probability.</li>
-        <li>Show label, risk percentage, and top indicative tokens.</li>
-      </ol>
+  <!-- Hero -->
+  <header class="site-hero hiw-hero">
+    <div class="site-hero-inner">
+      <h1>How it works</h1>
+      <p class="site-hero-sub">Our simple process</p>
     </div>
-  </section>
+  </header>
+
+  <!-- Steps -->
+  <main class="hiw-wrap">
+    <div class="steps-grid">
+      <!-- Step 1 -->
+      <section class="step-card step-blue">
+        <div class="step-inner">
+          <h3 class="step-title"><span class="kicker">Step 1:</span> Submit details</h3>
+          <p class="step-copy">
+            Tell us about the job offer and company. Upload any relevant documents or links.
+          </p>
+          <div class="step-illustration" aria-hidden="true">💻🔍</div>
+        </div>
+      </section>
+
+      <!-- Step 2 -->
+      <section class="step-card step-green">
+        <div class="step-inner">
+          <h3 class="step-title"><span class="kicker">Step 2:</span> AI analysis</h3>
+          <p class="step-copy">
+            Our AI scans for red flags, inconsistencies, and known fraud patterns.
+          </p>
+          <div class="step-illustration" aria-hidden="true">🧠🛡️</div>
+        </div>
+      </section>
+    </div>
+
+    <!-- FAQ Panel -->
+    <section class="faq-panel">
+      <h3 class="faq-heading">Frequently asked questions</h3>
+
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>
+            <span class="q">What is FraudAlert?</span>
+            <span class="chev" aria-hidden="true"></span>
+          </summary>
+          <div class="a">
+            FraudAlert evaluates job posts for risk by combining NLP features and heuristic checks, returning a label and risk score.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <span class="q">How does the analysis work?</span>
+            <span class="chev" aria-hidden="true"></span>
+          </summary>
+          <div class="a">
+            Text is cleaned and vectorized, engineered features are added, then a calibrated classifier predicts probability with explanations.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <span class="q">What kind of fraud is detected?</span>
+            <span class="chev" aria-hidden="true"></span>
+          </summary>
+          <div class="a">
+            Common patterns include unrealistic pay, upfront fee asks, mismatched domains, vague roles, and copy‑paste content.
+          </div>
+        </details>
+
+        <details class="faq-item">
+          <summary>
+            <span class="q">Is my data secure?</span>
+            <span class="chev" aria-hidden="true"></span>
+          </summary>
+          <div class="a">
+            Only provided content is processed for scoring; files are handled over HTTPS and not shared with third parties.
+          </div>
+        </details>
+      </div>
+    </section>
+  </main>
+
   <footer class="site-footer">
-  <div class="footer-inner">
-    <div class="footer-brand">
-      <span class="logo-mark">
-         <img src="{{ url_for('static', filename='logo.svg') }}" alt="FraudAlert logo" />
-       </span>
-      <span class="brand-text">FraudAlert</span>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark">
+          <img src="{{ url_for('static', filename='logo.svg') }}" alt="FraudAlert logo" />
+        </span>
+        <span class="brand-text">FraudAlert</span>
+      </div>
+      <div class="footer-contact">
+        <div><strong>Email:</strong> <a href="mailto:devshree485@gmail.com">devshree485@gmail.com</a></div>
+        <div><strong>Phone:</strong> <a href="tel:+917219854481">+91-7219854481</a></div>
+        <div><strong>Location:</strong> Pune, India</div>
+      </div>
+      <div class="footer-links">
+        <a href="{{ url_for('about') }}">About</a>
+        <a href="{{ url_for('how') }}">How It Works</a>
+        <a href="{{ url_for('contact') }}">Contact</a>
+      </div>
     </div>
-    <div class="footer-contact">
-      <div><strong>Email:</strong> <a href="mailto:you@example.com">devshree485@gmail.com</a></div>
-      <div><strong>Phone:</strong> <a href="tel:+91XXXXXXXXXX">+91-7219854481</a></div>
-      <div><strong>Location:</strong> Pune, India</div>
+    <div class="footer-bar">
+      <span>© 2025 FraudAlert • v1.0.0</span>
     </div>
-    <div class="footer-links">
-      <a href="{{ url_for('about') }}">About</a>
-      <a href="{{ url_for('how') }}">How It Works</a>
-      <a href="{{ url_for('contact') }}">Contact</a>
-    </div>
-  </div>
-  <div class="footer-bar">
-    <span>© {{ 2025 }} FraudAlert • v1.0.0</span>
-  </div>
-</footer>
+  </footer>
 </body>
 </html>
