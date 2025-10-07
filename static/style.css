@@ -14,9 +14,9 @@ html, body { margin: 0; padding: 0 }
   --muted: #6a7d91;
   /* Accents */
   --primary: #1ea7a1;
-  --accent:  #ff9f43;
+  --accent: #ff9f43;
   --success: #2fb36e;
-  --danger:  #e35d6a;
+  --danger: #e35d6a;
   /* Links */
   --link: #cfdee9;
   --link-hover: var(--accent);
@@ -130,7 +130,7 @@ textarea:focus, input[type="text"]:focus, input[type="email"]:focus{
 
 /* =============== Upload PDF (Green) =============== */
 .upload-card{
-  background: linear-gradient(180deg, #3f7356 0%, #3a6a51 100%);
+  background: linear-gradient(180deg, #7b9c82 0%, #8ab191 100%);
   border-radius: 16px;
   box-shadow: 0 12px 28px rgba(0,0,0,.25), inset 0 0 0 2px rgba(255,255,255,.15);
   position: relative; padding:0;
@@ -154,16 +154,10 @@ section.card.upload-card .upload-drop{
   align-content: center;
   justify-items: center;
   min-height: 360px;
-
-  margin: 18px;                /* uniform inset gap from green edge */
-  border-radius: 18px;         /* rounded dashed frame */
-  border: 2px dashed rgba(255,255,255,0.70);
+  margin: 18px; border-radius: 18px; border: 2px dashed rgba(255,255,255,0.70);
   background: rgba(255,255,255,0.03);
-
-  padding: 28px 20px;          /* space inside dashed frame */
-  box-shadow: inset 0 0 0 1px rgba(0,0,0,.04);
-  text-align: center;
-  color: #ffffff;
+  padding: 28px 20px; box-shadow: inset 0 0 0 1px rgba(0,0,0,.04);
+  text-align: center; color: #ffffff;
 }
 .upload-top{ text-align:center }
 .upload-icon.small{ font-size:24px; color:#ffffff; opacity:.95 }
@@ -300,10 +294,7 @@ section.card.upload-card .upload-drop{
 .contact-hero p{ margin:0; opacity:.92 }
 
 /* Focus styles */
-button:focus, .btn:focus, input:focus, textarea:focus {
-  outline: 3px solid var(--focus);
-  outline-offset: 2px;
-}
+button:focus, .btn:focus, input:focus, textarea:focus { outline: 3px solid var(--focus); outline-offset: 2px }
 
 /* Responsive tweaks */
 @media (max-width:480px){
@@ -314,8 +305,8 @@ button:focus, .btn:focus, input:focus, textarea:focus {
 
 /* FINAL OVERRIDE: inset dashed frame for the upload drop area */
 main.wrap section.card.upload-card > .upload-inner > form.upload-form > div.upload-drop {
-  margin: 18px !important;            /* uniform inset gap */
-  border-radius: 18px !important;      /* rounded dashed frame */
+  margin: 18px !important;
+  border-radius: 18px !important;
   border: 2px dashed rgba(255,255,255,0.70) !important;
   background: rgba(255,255,255,0.03) !important;
   padding: 28px 20px !important;
@@ -324,24 +315,12 @@ main.wrap section.card.upload-card > .upload-inner > form.upload-form > div.uplo
 }
 
 /* Contact page layout (3 cards like reference) */
-.contact-wrap{
-  max-width: var(--container);
-  margin: 22px auto 34px;
-  padding: 0 var(--pad);
-}
-.contact-grid{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-}
+.contact-wrap{ max-width: var(--container); margin: 22px auto 34px; padding: 0 var(--pad) }
+.contact-grid{ display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px }
 @media (max-width:1080px){ .contact-grid{ grid-template-columns:1fr } }
-
 .contact-card{
-  border-radius: 16px;
-  padding: 0;
-  background: #fff;
-  border: 1px solid rgba(13,27,42,.08);
-  box-shadow: 0 16px 36px rgba(13,27,42,.14);
+  border-radius: 16px; padding: 0; background: #fff;
+  border: 1px solid rgba(13,27,42,.08); box-shadow: 0 16px 36px rgba(13,27,42,.14);
 }
 
 /* Left info card (light) */
@@ -350,11 +329,7 @@ main.wrap section.card.upload-card > .upload-inner > form.upload-form > div.uplo
   border: 1px solid rgba(90,130,160,.25);
   padding: 18px;
 }
-.info-card h3{
-  margin: 8px 2px 12px;
-  color: #18364a;
-  font-weight: 800;
-}
+.info-card h3{ margin: 8px 2px 12px; color: #18364a; font-weight: 800 }
 .info-list{ display:grid; gap:12px }
 .info-row{ display:flex; gap:12px; align-items:flex-start; background:#fff; padding:12px; border-radius:12px; border:1px solid rgba(13,27,42,.10); box-shadow: 0 6px 14px rgba(13,27,42,.08) }
 .info-ico{ font-size:18px }
@@ -364,38 +339,27 @@ main.wrap section.card.upload-card > .upload-inner > form.upload-form > div.uplo
 
 /* Center map card (green with inset dashed) */
 .map-card{
-  background: linear-gradient(180deg, #3f7356 0%, #3a6a51 100%);
+  background: linear-gradient(180deg, #2f683b 0%, #53765a 100%);
   color:#fff; border: 1px solid rgba(255,255,255,.15);
   position:relative; padding:0;
   box-shadow: 0 12px 28px rgba(0,0,0,.25), inset 0 0 0 2px rgba(255,255,255,.12);
 }
 .map-inset{
-  margin:18px;
-  border-radius:18px;
-  border:2px dashed rgba(255,255,255,.70);
-  background: rgba(255,255,255,.03);
-  padding:12px;
-  min-height:360px;
-  display:grid;
-  place-items:center;
+  margin:18px; border-radius:18px; border:2px dashed rgba(255,255,255,.70);
+  background: rgba(255,255,255,.03); padding:12px; min-height:360px; display:grid; place-items:center;
   box-shadow: inset 0 0 0 1px rgba(0,0,0,.04);
 }
 .map-inset iframe{
-  width:100%;
-  height:320px;
-  border:0;
-  border-radius:12px;
-  box-shadow:0 8px 22px rgba(0,0,0,.24);
+  width:100%; height:320px; border:0; border-radius:12px; box-shadow:0 8px 22px rgba(0,0,0,.24);
 }
 
 /* Right form card (reuse card-navy + form-surface) */
 .form-card{ padding-top:20px; padding-bottom:20px }
 .form-card .card-head{ padding:0 16px 0 16px }
-.form-card .form-surface{ margin:12px 16px 10px 16px; }
-
+.form-card .form-surface{ margin:12px 16px 10px 16px }
 
 /* ===== About page ===== */
-.about-only { background: #eef2f6; }
+.about-only { background: #eef2f6 }
 
 /* Dark hero with subtle particles glow */
 .about-hero{
@@ -403,97 +367,34 @@ main.wrap section.card.upload-card > .upload-inner > form.upload-form > div.uplo
     radial-gradient(800px 240px at 20% -10%, rgba(255,159,67,.20), transparent),
     radial-gradient(900px 280px at 80% -10%, rgba(30,167,161,.18), transparent),
     linear-gradient(180deg, #132338 0%, #0f1c2f 100%);
-  color:#fff;
-  box-shadow: 0 18px 40px rgba(13,27,42,.30);
+  color:#fff; box-shadow: 0 18px 40px rgba(13,27,42,.30);
 }
-.about-hero-inner{
-  max-width: var(--container);
-  margin: 0 auto;
-  padding: 44px var(--pad) 56px;
-  text-align: center;
-}
-.about-hero .headline-kicker{
-  text-transform: uppercase;
-  letter-spacing: .12em;
-  opacity: .85;
-  font-weight: 800;
-  margin-bottom: 10px;
-}
-.about-hero h1{
-  margin: 0;
-  font-weight: 900;
-  letter-spacing: .8px;
-  line-height: 1.06;
-  font-size: 40px;
-  text-shadow: 0 10px 28px rgba(0,0,0,.35);
-}
-.about-hero .sub-kicker{
-  margin-top: 10px;
-  opacity: .9;
-  font-weight: 700;
-}
+.about-hero-inner{ max-width: var(--container); margin: 0 auto; padding: 44px var(--pad) 56px; text-align: center }
+.about-hero .headline-kicker{ text-transform: uppercase; letter-spacing: .12em; opacity: .85; font-weight: 800; margin-bottom: 10px }
+.about-hero h1{ margin: 0; font-weight: 900; letter-spacing: .8px; line-height: 1.06; font-size: 40px; text-shadow: 0 10px 28px rgba(0,0,0,.35) }
+.about-hero .sub-kicker{ margin-top: 10px; opacity: .9; font-weight: 700 }
 
 /* Mission/Vision cards */
-.about-wrap{
-  max-width: var(--container);
-  margin: 24px auto 36px;
-  padding: 0 var(--pad);
-}
-.mv-grid{
-  display: grid;
-  grid-template-columns: repeat(2,1fr);
-  gap: 24px;
-}
+.about-wrap{ max-width: var(--container); margin: 24px auto 36px; padding: 0 var(--pad) }
+.mv-grid{ display: grid; grid-template-columns: repeat(2,1fr); gap: 24px }
 @media (max-width: 900px){ .mv-grid{ grid-template-columns:1fr } }
-
 .mv-card{
-  border-radius: 14px;
-  padding: 22px 20px;
-  box-shadow: 0 16px 36px rgba(13,27,42,.18);
+  border-radius: 14px; padding: 22px 20px; box-shadow: 0 16px 36px rgba(13,27,42,.18);
   border: 1px solid rgba(13,27,42,.08);
 }
-.mv-card h3{
-  margin: 0 0 10px;
-  font-weight: 900;
-  letter-spacing: .4px;
-}
-.mv-card p{
-  margin: 0;
-  color: #2a3a4b;
-  line-height: 1.55;
-}
-.mv-blue{
-  background: linear-gradient(180deg, #d8e9f5 0%, #cde1ee 100%);
-  border-color: rgba(53,86,117,.18);
-}
-.mv-green{
-  background: linear-gradient(180deg, #98ba9f 0%, #8ab191 100%);
-  border-color: rgba(40,84,60,.18);
-}
+.mv-card h3{ margin: 0 0 10px; font-weight: 900; letter-spacing: .4px }
+.mv-card p{ margin: 0; color: #2a3a4b; line-height: 1.55 }
+.mv-blue{ background: linear-gradient(180deg, #d8e9f5 0%, #cde1ee 100%); border-color: rgba(53,86,117,.18) }
+.mv-green{ background: linear-gradient(180deg, #98ba9f 0%, #8ab191 100%); border-color: rgba(40,84,60,.18) }
 
 /* Team panel */
 .team-card{
-  margin-top: 28px;
-  background: linear-gradient(180deg, #132338 0%, #102030 100%);
-  color:#eaf2f9;
-  border-radius: 14px;
-  padding: 22px 20px 24px;
-  box-shadow: 0 18px 38px rgba(13,27,42,.28);
+  margin-top: 28px; background: linear-gradient(180deg, #132338 0%, #102030 100%);
+  color:#eaf2f9; border-radius: 14px; padding: 22px 20px 24px; box-shadow: 0 18px 38px rgba(13,27,42,.28);
   border: 1px solid rgba(255,255,255,.06);
 }
-.team-title{
-  text-align:center;
-  margin: 0 0 12px;
-  font-weight: 900;
-  letter-spacing: .4px;
-}
-.team-grid{
-  display:grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 18px;
-  max-width: 900px;
-  margin: 0 auto;
-}
+.team-title{ text-align:center; margin: 0 0 12px; font-weight: 900; letter-spacing: .4px }
+.team-grid{ display:grid; grid-template-columns: repeat(3, 1fr); gap: 18px; max-width: 900px; margin: 0 auto }
 @media (max-width: 900px){ .team-grid{ grid-template-columns:1fr 1fr } }
 @media (max-width: 600px){ .team-grid{ grid-template-columns:1fr } }
 
@@ -513,23 +414,17 @@ main.wrap section.card.upload-card > .upload-inner > form.upload-form > div.uplo
 .team-card.single { text-align:center; }
 
 .team-single{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  padding: 6px 0 2px;
+  display:flex; justify-content:center; align-items:center; padding: 6px 0 2px;
 }
-
 .avatar.lg{
-  width: 150px; height: 150px;   /* larger circle */
+  width: 150px; height: 150px;
   margin: 6px auto 10px;
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 12px 28px rgba(0,0,0,.30), inset 0 0 0 2px rgba(255,255,255,.15);
 }
-.avatar.lg img{ width:100%; height:100%; object-fit:cover; display:block }
-
 .team-card.single .name{ font-weight:900; font-size:1.05rem }
-.team-card.single .role{ opacity:.9; }
+.team-card.single .role{ opacity:.9 }
 
 /* ===== Global hero (top box on all pages) ===== */
 .site-hero{
@@ -537,32 +432,15 @@ main.wrap section.card.upload-card > .upload-inner > form.upload-form > div.uplo
     radial-gradient(800px 220px at 20% -10%, rgba(255,159,67,.18), transparent),
     radial-gradient(900px 260px at 80% -10%, rgba(30,167,161,.16), transparent),
     linear-gradient(180deg, #132338 0%, #0f1c2f 100%);
-  color:#fff;
-  box-shadow: 0 16px 36px rgba(13,27,42,.28);
+  color:#fff; box-shadow: 0 16px 36px rgba(13,27,42,.28);
 }
-.site-hero-inner{
-  max-width: var(--container);
-  margin: 0 auto;
-  padding: 28px var(--pad) 34px;   /* shorter than About hero */
-  text-align: center;
-}
+.site-hero-inner{ max-width: var(--container); margin: 0 auto; padding: 28px var(--pad) 34px; text-align: center }
 .site-hero h1{
-  margin: 0;
-  font-weight: 900;
-  letter-spacing: .8px;
-  line-height: 1.06;
-  font-size: 36px;                 /* balanced across pages */
+  margin: 0; font-weight: 900; letter-spacing: .8px; line-height: 1.06; font-size: 36px;
   text-shadow: 0 10px 28px rgba(0,0,0,.35);
 }
-.site-hero-sub{
-  margin-top: 8px;
-  opacity: .9;
-  font-weight: 700;
-}
-@media (max-width: 520px){
-  .site-hero h1{ font-size: 30px }
-}
-
+.site-hero-sub{ margin-top: 8px; opacity: .9; font-weight: 700 }
+@media (max-width: 520px){ .site-hero h1{ font-size: 30px } }
 
 /* Center title and rows in info card */
 .info-title{ text-align:center; font-weight:900; color:#18364a }
@@ -573,42 +451,28 @@ main.wrap section.card.upload-card > .upload-inner > form.upload-form > div.uplo
 .info-text{ display:grid; gap:2px }
 
 /* Center map perfectly in green card */
-.map-inset{ display:grid; place-items:center; }
-.map-inset.center{ place-items:center; }
+.map-inset{ display:grid; place-items:center }
+.map-inset.center{ place-items:center }
 .map-inset iframe{
-  width: 92%;
-  max-width: 520px;
-  height: 320px;
-  border: 0;
-  border-radius: 12px;
-  box-shadow: 0 8px 22px rgba(0,0,0,.24);
+  width: 92%; max-width: 520px; height: 320px;
+  border: 0; border-radius: 12px; box-shadow: 0 8px 22px rgba(0,0,0,.24);
 }
 
 /* Tighten form spacing after field reduction */
-.form-card .form-surface{ display:grid; gap:12px; }
-.form-card .grid{ gap:12px; }
+.form-card .form-surface{ display:grid; gap:12px }
+.form-card .grid{ gap:12px }
 
 /* Stack and center */
 .form-card .card-head.emblem{
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  gap: 8px;
-  padding-top: 4px;
-  text-align: center;
+  display: grid; justify-items: center; align-items: center; gap: 8px; padding-top: 4px; text-align: center;
 }
 .form-card .card-head.emblem .card-icon{
-  width: 42px; height: 42px;
-  display: grid; place-items: center;
-  border-radius: 12px;
-  background: rgba(255,255,255,.10);     /* subtle tile behind icon */
-  box-shadow: inset 0 0 0 1px rgba(255,255,255,.12);
-  color: #fff;
-  font-size: 22px;                       /* for emoji */
+  width: 42px; height: 42px; display: grid; place-items: center; border-radius: 12px;
+  background: rgba(255,255,255,.10); box-shadow: inset 0 0 0 1px rgba(255,255,255,.12);
+  color: #fff; font-size: 22px;
 }
-.form-card .card-head.emblem .card-icon svg{ width: 26px; height: 26px; }
-.form-card .card-head.emblem h3{ margin: 0; }
-
+.form-card .card-head.emblem .card-icon svg{ width: 26px; height: 26px }
+.form-card .card-head.emblem h3{ margin: 0 }
 
 /* ===== How It Works page ===== */
 .hiw-hero{
@@ -616,66 +480,26 @@ main.wrap section.card.upload-card > .upload-inner > form.upload-form > div.uplo
     radial-gradient(900px 260px at 18% -12%, rgba(30,167,161,.22), transparent),
     radial-gradient(1000px 280px at 82% -12%, rgba(255,159,67,.22), transparent),
     linear-gradient(180deg, #143459 0%, var(--nav) 100%);
-  color:#fff;
-  box-shadow: 0 16px 36px rgba(13,27,42,.28);
+  color:#fff; box-shadow: 0 16px 36px rgba(13,27,42,.28);
 }
-.hiw-wrap{
-  max-width: var(--container);
-  margin: 22px auto 36px;
-  padding: 0 var(--pad);
-}
+.hiw-wrap{ max-width: var(--container); margin: 22px auto 36px; padding: 0 var(--pad) }
 
 /* Steps */
-.steps-grid{
-  display:grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 24px;
-  margin-top: 14px;
-}
+.steps-grid{ display:grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 14px }
 @media (max-width: 900px){ .steps-grid{ grid-template-columns:1fr } }
-
 .step-card{
-  border-radius: 16px;
-  padding: 0;
-  border: 1px solid rgba(13,27,42,.10);
+  border-radius: 16px; padding: 0; border: 1px solid rgba(13,27,42,.10);
   box-shadow: 0 16px 40px rgba(13,27,42,.12), 0 24px 60px rgba(13,27,42,.08);
 }
-.step-inner{ padding: 24px 20px; }
-.step-title{
-  margin: 0 0 10px;
-  font-weight: 900;
-  letter-spacing: .3px;
-  text-align: center;
-  color: #17334b;
-}
-.step-title .kicker{
-  text-transform: uppercase;
-  color:#274b64;
-  opacity:.9;
-  margin-right:6px;
-}
-.step-copy{
-  margin: 0;
-  text-align: center;
-  color: #2a3a4b;
-  line-height: 1.55;
-}
-.step-illustration{
-  font-size: 36px;
-  text-align: center;
-  margin-top: 14px;
-  opacity: .95;
-}
+.step-inner{ padding: 24px 20px }
+.step-title{ margin: 0 0 10px; font-weight: 900; letter-spacing: .3px; text-align: center; color: #17334b }
+.step-title .kicker{ text-transform: uppercase; color:#274b64; opacity:.9; margin-right:6px }
+.step-copy{ margin: 0; text-align: center; color: #2a3a4b; line-height: 1.55 }
+.step-illustration{ font-size: 36px; text-align: center; margin-top: 14px; opacity: .95 }
 
 /* Blue and Green variant backgrounds */
-.step-blue{
-  background: linear-gradient(180deg, #d9e8f4 0%, #cfe2ee 100%);
-  border-color: rgba(53,86,117,.18);
-}
-.step-green{
-  background: linear-gradient(180deg, #a8c69f 0%, #9eba96 100%);
-  border-color: rgba(40,84,60,.18);
-}
+.step-blue{ background: linear-gradient(180deg, #d9e8f4 0%, #cfe2ee 100%); border-color: rgba(53,86,117,.18) }
+.step-green{ background: linear-gradient(180deg, #98ba9f 0%, #8ab191 100%); border-color: rgba(40,84,60,.18) }
 
 /* FAQ Panel */
 .faq-panel{
@@ -687,15 +511,10 @@ main.wrap section.card.upload-card > .upload-inner > form.upload-form > div.uplo
   box-shadow: 0 18px 38px rgba(13,27,42,.28);
   border: 1px solid rgba(255,255,255,.06);
 }
-.faq-heading{
-  margin: 0 0 12px;
-  text-align: center;
-  font-weight: 900;
-  letter-spacing: .4px;
-}
-.faq-list{ max-width: 980px; margin: 0 auto; display:grid; gap:12px; }
+.faq-heading{ margin: 0 0 12px; text-align: center; font-weight: 900; letter-spacing: .4px }
+.faq-list{ max-width: 980px; margin: 0 auto; display:grid; gap:12px }
 
-/* Expandable FAQ items with arrow */
+/* Expandable FAQ items with chevron (no cross) */
 .faq-item{
   background: rgba(255,255,255,.06);
   border: 1px solid rgba(255,255,255,.10);
@@ -703,41 +522,41 @@ main.wrap section.card.upload-card > .upload-inner > form.upload-form > div.uplo
   overflow: hidden;
 }
 .faq-item summary{
-  display:grid;
-  grid-template-columns: 1fr auto;
-  align-items:center;
-  gap: 10px;
-  padding: 12px 14px;
-  cursor:pointer;
-  list-style:none;
-  user-select:none;
-  font-weight:700;
-  color:#eaf2f9;
+  display:grid; grid-template-columns: 1fr auto; align-items:center; gap: 10px;
+  padding: 12px 14px; padding-right: 34px;           /* room for arrow */
+  cursor:pointer; list-style:none; user-select:none;
+  font-weight:700; color:#eaf2f9; position: relative;
 }
-.faq-item summary::-webkit-details-marker{ display:none; }
-.faq-item .q{ pointer-events:none; }
-.faq-item .chev{
-  width: 10px; height: 10px; position: relative; transform: rotate(0deg); transition: transform .2s ease;
-}
-.faq-item .chev::before, .faq-item .chev::after{
-  content:""; position:absolute; inset:auto;
-  width: 10px; height: 2px; background:#eaf2f9; top:4px; left:0; transition:transform .2s ease, opacity .2s ease;
-}
-.faq-item .chev::before{ transform: rotate(45deg); }
-.faq-item .chev::after{ transform: rotate(-45deg); }
+.faq-item summary::-webkit-details-marker{ display:none }
+.faq-item .q{ pointer-events:none }
 
-/* When open, rotate chevron down */
-.faq-item[open] .chev{ transform: rotate(180deg); }
+/* Hide any legacy close/cross elements inside summary */
+.faq-item summary .close,
+.faq-item summary .x,
+.faq-item summary .icon-x,
+.faq-item summary .badge-x,
+.faq-item summary button.close,
+.faq-item summary button.x{ display:none !important }
+.faq-item summary .close::before,
+.faq-item summary .close::after,
+.faq-item summary .x::before,
+.faq-item summary .x::after{ content:"" !important; display:none !important }
+
+/* Chevron: single glyph, right aligned */
+.faq-item summary .chev{
+  position:absolute; right:12px; top:50%; transform:translateY(-50%);
+  width:18px; height:18px; display:grid; place-items:center; color:#eaf2f9; pointer-events:none;
+}
+.faq-item summary .chev::before{ content:"▾"; font-size:16px; line-height:1 }
+.faq-item[open] summary .chev::before{ content:"▴" }
+
+/* Open state */
 .faq-item[open]{ background: rgba(255,255,255,.08); box-shadow: 0 6px 16px rgba(13,27,42,.28) }
 
 /* Answer */
-.faq-item .a{
-  padding: 0 14px 14px 14px;
-  color:#cfe0ee;
-  line-height:1.55;
-}
+.faq-item .a{ padding: 0 14px 14px 14px; color:#cfe0ee; line-height:1.55 }
 
-/* Small toggle chips (optional look alike to image) */
+/* Small toggle chips */
 .faq-item .a .chip{ display:inline-block; background:#0f2439; padding:6px 10px; border-radius:999px; border:1px solid rgba(255,255,255,.10) }
 
 /* Contact hero like reference */
@@ -746,8 +565,7 @@ main.wrap section.card.upload-card > .upload-inner > form.upload-form > div.uplo
     radial-gradient(900px 260px at 18% -12%, rgba(30,167,161,.22), transparent),
     radial-gradient(1000px 280px at 82% -12%, rgba(255,159,67,.22), transparent),
     linear-gradient(180deg, #143459 0%, var(--nav) 100%);
-  color:#fff;
-  box-shadow: 0 16px 36px rgba(13,27,42,.28);
+  color:#fff; box-shadow: 0 16px 36px rgba(13,27,42,.28);
 }
 
 /* Two-card grid */
@@ -781,22 +599,18 @@ main.wrap section.card.upload-card > .upload-inner > form.upload-form > div.uplo
 
 /* Green info card */
 .info-green{
-  background: linear-gradient(180deg, #9ebc99 0%, #8fb28f 100%);
+  background: linear-gradient(180deg, #98ba9f 0%, #8ab191 100%);
   border: 1px solid rgba(40,84,60,.18);
   border-radius:16px;
   box-shadow: 0 16px 36px rgba(13,27,42,.14);
-  padding:18px;
-  color:#fff;
+  padding:18px; color:#fff;
 }
 .info-green .card-title{ color:#ffffff }
 .info-green .info-block{ text-align:center; line-height:1.6 }
 .info-green a{ color:#fff; text-decoration:underline }
-.socials{
-  display:flex; gap:10px; justify-content:center; margin-top:12px;
-}
+.socials{ display:flex; gap:10px; justify-content:center; margin-top:12px }
 .socials a{
-  width:28px; height:28px; display:grid; place-items:center;
-  border-radius:999px; background:rgba(255,255,255,.15);
-  color:#fff; text-decoration:none; font-weight:800;
+  width:28px; height:28px; display:grid; place-items:center; border-radius:999px;
+  background:rgba(255,255,255,.15); color:#fff; text-decoration:none; font-weight:800;
   box-shadow: inset 0 0 0 1px rgba(255,255,255,.16);
 }
